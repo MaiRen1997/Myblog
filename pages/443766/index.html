@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ReactHooks | 麦仁博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="记录前端知识、读书学习">
+    
+    <link rel="preload" href="/Myblog/assets/css/0.styles.baca3271.css" as="style"><link rel="preload" href="/Myblog/assets/js/app.5421f7e4.js" as="script"><link rel="preload" href="/Myblog/assets/js/2.e664d817.js" as="script"><link rel="preload" href="/Myblog/assets/js/160.4e1e9e92.js" as="script"><link rel="prefetch" href="/Myblog/assets/js/10.35831459.js"><link rel="prefetch" href="/Myblog/assets/js/100.f58b54b5.js"><link rel="prefetch" href="/Myblog/assets/js/101.3c5388cc.js"><link rel="prefetch" href="/Myblog/assets/js/102.d807dee2.js"><link rel="prefetch" href="/Myblog/assets/js/103.272afa64.js"><link rel="prefetch" href="/Myblog/assets/js/104.e03a6a04.js"><link rel="prefetch" href="/Myblog/assets/js/105.174dd4b6.js"><link rel="prefetch" href="/Myblog/assets/js/106.2fe31ebe.js"><link rel="prefetch" href="/Myblog/assets/js/107.33638561.js"><link rel="prefetch" href="/Myblog/assets/js/108.9a61f670.js"><link rel="prefetch" href="/Myblog/assets/js/109.e6061062.js"><link rel="prefetch" href="/Myblog/assets/js/11.cc288746.js"><link rel="prefetch" href="/Myblog/assets/js/110.9e9a942b.js"><link rel="prefetch" href="/Myblog/assets/js/111.7b8dfc2e.js"><link rel="prefetch" href="/Myblog/assets/js/112.d7d01c02.js"><link rel="prefetch" href="/Myblog/assets/js/113.2239219d.js"><link rel="prefetch" href="/Myblog/assets/js/114.75564d23.js"><link rel="prefetch" href="/Myblog/assets/js/115.e7d40411.js"><link rel="prefetch" href="/Myblog/assets/js/116.e12865d4.js"><link rel="prefetch" href="/Myblog/assets/js/117.86138339.js"><link rel="prefetch" href="/Myblog/assets/js/118.91bf735a.js"><link rel="prefetch" href="/Myblog/assets/js/119.51399e06.js"><link rel="prefetch" href="/Myblog/assets/js/12.ec43aaad.js"><link rel="prefetch" href="/Myblog/assets/js/120.97bb7055.js"><link rel="prefetch" href="/Myblog/assets/js/121.be4e0f54.js"><link rel="prefetch" href="/Myblog/assets/js/122.70826e84.js"><link rel="prefetch" href="/Myblog/assets/js/123.4cb454f5.js"><link rel="prefetch" href="/Myblog/assets/js/124.25908e60.js"><link rel="prefetch" href="/Myblog/assets/js/125.0fa5211f.js"><link rel="prefetch" href="/Myblog/assets/js/126.4543bf72.js"><link rel="prefetch" href="/Myblog/assets/js/127.034591d1.js"><link rel="prefetch" href="/Myblog/assets/js/128.bf7983b7.js"><link rel="prefetch" href="/Myblog/assets/js/129.acc131f6.js"><link rel="prefetch" href="/Myblog/assets/js/13.082d77f5.js"><link rel="prefetch" href="/Myblog/assets/js/130.b3cd6e0e.js"><link rel="prefetch" href="/Myblog/assets/js/131.6b460f6e.js"><link rel="prefetch" href="/Myblog/assets/js/132.b0ac29f8.js"><link rel="prefetch" href="/Myblog/assets/js/133.2db0288f.js"><link rel="prefetch" href="/Myblog/assets/js/134.9426ff71.js"><link rel="prefetch" href="/Myblog/assets/js/135.250f6c2c.js"><link rel="prefetch" href="/Myblog/assets/js/136.3a9bc7c7.js"><link rel="prefetch" href="/Myblog/assets/js/137.b1cd6053.js"><link rel="prefetch" href="/Myblog/assets/js/138.c1d909b5.js"><link rel="prefetch" href="/Myblog/assets/js/139.1b0ee1aa.js"><link rel="prefetch" href="/Myblog/assets/js/14.2221b42c.js"><link rel="prefetch" href="/Myblog/assets/js/140.4a84a53e.js"><link rel="prefetch" href="/Myblog/assets/js/141.a84482ee.js"><link rel="prefetch" href="/Myblog/assets/js/142.a8f5259e.js"><link rel="prefetch" href="/Myblog/assets/js/143.1cad0771.js"><link rel="prefetch" href="/Myblog/assets/js/144.f0ab4016.js"><link rel="prefetch" href="/Myblog/assets/js/145.e9d9cd73.js"><link rel="prefetch" href="/Myblog/assets/js/146.d18c107e.js"><link rel="prefetch" href="/Myblog/assets/js/147.9e982ee5.js"><link rel="prefetch" href="/Myblog/assets/js/148.8560edee.js"><link rel="prefetch" href="/Myblog/assets/js/149.8bebc71f.js"><link rel="prefetch" href="/Myblog/assets/js/15.01b32189.js"><link rel="prefetch" href="/Myblog/assets/js/150.ae5f7f83.js"><link rel="prefetch" href="/Myblog/assets/js/151.2819e3a8.js"><link rel="prefetch" href="/Myblog/assets/js/152.2fc6b422.js"><link rel="prefetch" href="/Myblog/assets/js/153.dad7c213.js"><link rel="prefetch" href="/Myblog/assets/js/154.17c57273.js"><link rel="prefetch" href="/Myblog/assets/js/155.029479fa.js"><link rel="prefetch" href="/Myblog/assets/js/156.22be1255.js"><link rel="prefetch" href="/Myblog/assets/js/157.3eca644d.js"><link rel="prefetch" href="/Myblog/assets/js/158.03cf639d.js"><link rel="prefetch" href="/Myblog/assets/js/159.14ddadab.js"><link rel="prefetch" href="/Myblog/assets/js/16.efa28463.js"><link rel="prefetch" href="/Myblog/assets/js/161.09401d07.js"><link rel="prefetch" href="/Myblog/assets/js/162.923ad68f.js"><link rel="prefetch" href="/Myblog/assets/js/163.12dc125e.js"><link rel="prefetch" href="/Myblog/assets/js/164.dd49f5d4.js"><link rel="prefetch" href="/Myblog/assets/js/165.2238953c.js"><link rel="prefetch" href="/Myblog/assets/js/166.7e8b5397.js"><link rel="prefetch" href="/Myblog/assets/js/167.2f925652.js"><link rel="prefetch" href="/Myblog/assets/js/168.2caff1df.js"><link rel="prefetch" href="/Myblog/assets/js/169.f3628a3f.js"><link rel="prefetch" href="/Myblog/assets/js/17.88357e0b.js"><link rel="prefetch" href="/Myblog/assets/js/170.ba5402b8.js"><link rel="prefetch" href="/Myblog/assets/js/171.997fc0af.js"><link rel="prefetch" href="/Myblog/assets/js/172.aadbe50f.js"><link rel="prefetch" href="/Myblog/assets/js/173.3803981f.js"><link rel="prefetch" href="/Myblog/assets/js/174.87272156.js"><link rel="prefetch" href="/Myblog/assets/js/175.62e7ad0f.js"><link rel="prefetch" href="/Myblog/assets/js/176.5f2bb06d.js"><link rel="prefetch" href="/Myblog/assets/js/177.690192ea.js"><link rel="prefetch" href="/Myblog/assets/js/178.2c9c0bbc.js"><link rel="prefetch" href="/Myblog/assets/js/179.b9095ee0.js"><link rel="prefetch" href="/Myblog/assets/js/18.7f22acdc.js"><link rel="prefetch" href="/Myblog/assets/js/180.6fae6060.js"><link rel="prefetch" href="/Myblog/assets/js/181.bdace8fb.js"><link rel="prefetch" href="/Myblog/assets/js/182.30c491e3.js"><link rel="prefetch" href="/Myblog/assets/js/183.825b9f14.js"><link rel="prefetch" href="/Myblog/assets/js/184.5d9c20a2.js"><link rel="prefetch" href="/Myblog/assets/js/185.30dcc28d.js"><link rel="prefetch" href="/Myblog/assets/js/186.fd3a8ff8.js"><link rel="prefetch" href="/Myblog/assets/js/187.b149a13d.js"><link rel="prefetch" href="/Myblog/assets/js/188.698000fc.js"><link rel="prefetch" href="/Myblog/assets/js/189.0e2c6941.js"><link rel="prefetch" href="/Myblog/assets/js/19.133bfb85.js"><link rel="prefetch" href="/Myblog/assets/js/190.f3142eff.js"><link rel="prefetch" href="/Myblog/assets/js/191.62d32982.js"><link rel="prefetch" href="/Myblog/assets/js/192.03ac8c9e.js"><link rel="prefetch" href="/Myblog/assets/js/193.cf763668.js"><link rel="prefetch" href="/Myblog/assets/js/194.b3eeaf57.js"><link rel="prefetch" href="/Myblog/assets/js/195.d9d672b6.js"><link rel="prefetch" href="/Myblog/assets/js/196.0b343eb2.js"><link rel="prefetch" href="/Myblog/assets/js/197.913a4b3f.js"><link rel="prefetch" href="/Myblog/assets/js/198.c84174f4.js"><link rel="prefetch" href="/Myblog/assets/js/199.3391e0bf.js"><link rel="prefetch" href="/Myblog/assets/js/20.d256f260.js"><link rel="prefetch" href="/Myblog/assets/js/200.033d356e.js"><link rel="prefetch" href="/Myblog/assets/js/201.0f54403e.js"><link rel="prefetch" href="/Myblog/assets/js/202.20130dc8.js"><link rel="prefetch" href="/Myblog/assets/js/203.dc79a237.js"><link rel="prefetch" href="/Myblog/assets/js/204.6bdd4968.js"><link rel="prefetch" href="/Myblog/assets/js/205.3bea3f33.js"><link rel="prefetch" href="/Myblog/assets/js/206.aae0ee32.js"><link rel="prefetch" href="/Myblog/assets/js/207.3bd8f984.js"><link rel="prefetch" href="/Myblog/assets/js/208.37ad1c56.js"><link rel="prefetch" href="/Myblog/assets/js/209.fa5bbac6.js"><link rel="prefetch" href="/Myblog/assets/js/21.303e3f13.js"><link rel="prefetch" href="/Myblog/assets/js/210.93d4ebb2.js"><link rel="prefetch" href="/Myblog/assets/js/211.5512e600.js"><link rel="prefetch" href="/Myblog/assets/js/212.4e99e36d.js"><link rel="prefetch" href="/Myblog/assets/js/213.5f9bb4cb.js"><link rel="prefetch" href="/Myblog/assets/js/214.7a4cea1d.js"><link rel="prefetch" href="/Myblog/assets/js/215.e8b37f96.js"><link rel="prefetch" href="/Myblog/assets/js/216.9678600e.js"><link rel="prefetch" href="/Myblog/assets/js/217.91163cc2.js"><link rel="prefetch" href="/Myblog/assets/js/218.fc8facc6.js"><link rel="prefetch" href="/Myblog/assets/js/219.cded6ae3.js"><link rel="prefetch" href="/Myblog/assets/js/22.8582bb0d.js"><link rel="prefetch" href="/Myblog/assets/js/220.e2c3e98d.js"><link rel="prefetch" href="/Myblog/assets/js/221.57add063.js"><link rel="prefetch" href="/Myblog/assets/js/222.fb170e72.js"><link rel="prefetch" href="/Myblog/assets/js/223.2d073484.js"><link rel="prefetch" href="/Myblog/assets/js/224.4489cea9.js"><link rel="prefetch" href="/Myblog/assets/js/225.e36f1ddf.js"><link rel="prefetch" href="/Myblog/assets/js/226.0f91245a.js"><link rel="prefetch" href="/Myblog/assets/js/227.761ce335.js"><link rel="prefetch" href="/Myblog/assets/js/228.477563c0.js"><link rel="prefetch" href="/Myblog/assets/js/229.f5b52c97.js"><link rel="prefetch" href="/Myblog/assets/js/23.6fa22244.js"><link rel="prefetch" href="/Myblog/assets/js/230.14e70ce0.js"><link rel="prefetch" href="/Myblog/assets/js/231.594b4b0c.js"><link rel="prefetch" href="/Myblog/assets/js/232.a2a11571.js"><link rel="prefetch" href="/Myblog/assets/js/233.beb8787b.js"><link rel="prefetch" href="/Myblog/assets/js/234.8a8cdd28.js"><link rel="prefetch" href="/Myblog/assets/js/235.2cac61d8.js"><link rel="prefetch" href="/Myblog/assets/js/236.7c323af8.js"><link rel="prefetch" href="/Myblog/assets/js/237.0c260676.js"><link rel="prefetch" href="/Myblog/assets/js/238.15e9afb8.js"><link rel="prefetch" href="/Myblog/assets/js/239.b2e27a51.js"><link rel="prefetch" href="/Myblog/assets/js/24.c8ab5973.js"><link rel="prefetch" href="/Myblog/assets/js/240.4e8bfda7.js"><link rel="prefetch" href="/Myblog/assets/js/241.d6950a6d.js"><link rel="prefetch" href="/Myblog/assets/js/242.bab57760.js"><link rel="prefetch" href="/Myblog/assets/js/243.9f9096a7.js"><link rel="prefetch" href="/Myblog/assets/js/244.aba26beb.js"><link rel="prefetch" href="/Myblog/assets/js/245.216af510.js"><link rel="prefetch" href="/Myblog/assets/js/246.2ffdc7bd.js"><link rel="prefetch" href="/Myblog/assets/js/247.b64dd2ca.js"><link rel="prefetch" href="/Myblog/assets/js/248.1e838359.js"><link rel="prefetch" href="/Myblog/assets/js/249.2efd3e96.js"><link rel="prefetch" href="/Myblog/assets/js/25.056f9ad9.js"><link rel="prefetch" href="/Myblog/assets/js/250.ff5b4ea5.js"><link rel="prefetch" href="/Myblog/assets/js/251.e0add913.js"><link rel="prefetch" href="/Myblog/assets/js/252.2cd84a7c.js"><link rel="prefetch" href="/Myblog/assets/js/253.5165a950.js"><link rel="prefetch" href="/Myblog/assets/js/254.5e3030e1.js"><link rel="prefetch" href="/Myblog/assets/js/255.c82f9cde.js"><link rel="prefetch" href="/Myblog/assets/js/256.d871c415.js"><link rel="prefetch" href="/Myblog/assets/js/257.ca5591a9.js"><link rel="prefetch" href="/Myblog/assets/js/258.6264b83d.js"><link rel="prefetch" href="/Myblog/assets/js/259.7c59819a.js"><link rel="prefetch" href="/Myblog/assets/js/26.7b206563.js"><link rel="prefetch" href="/Myblog/assets/js/260.6aa4a5d6.js"><link rel="prefetch" href="/Myblog/assets/js/261.512a2a26.js"><link rel="prefetch" href="/Myblog/assets/js/262.908bca4d.js"><link rel="prefetch" href="/Myblog/assets/js/263.50552858.js"><link rel="prefetch" href="/Myblog/assets/js/264.891747f5.js"><link rel="prefetch" href="/Myblog/assets/js/265.7b8e0a64.js"><link rel="prefetch" href="/Myblog/assets/js/266.cd8cb0bc.js"><link rel="prefetch" href="/Myblog/assets/js/267.a69488b2.js"><link rel="prefetch" href="/Myblog/assets/js/268.e0c6dd2f.js"><link rel="prefetch" href="/Myblog/assets/js/269.d9deac88.js"><link rel="prefetch" href="/Myblog/assets/js/27.804dd415.js"><link rel="prefetch" href="/Myblog/assets/js/270.bb5ed046.js"><link rel="prefetch" href="/Myblog/assets/js/271.b3511e1e.js"><link rel="prefetch" href="/Myblog/assets/js/272.0e19d96a.js"><link rel="prefetch" href="/Myblog/assets/js/273.58be0094.js"><link rel="prefetch" href="/Myblog/assets/js/274.807c3f68.js"><link rel="prefetch" href="/Myblog/assets/js/275.19501ffb.js"><link rel="prefetch" href="/Myblog/assets/js/276.58516fcd.js"><link rel="prefetch" href="/Myblog/assets/js/277.ec81ae53.js"><link rel="prefetch" href="/Myblog/assets/js/278.a3ff1bb0.js"><link rel="prefetch" href="/Myblog/assets/js/279.d9d866c8.js"><link rel="prefetch" href="/Myblog/assets/js/28.650712b0.js"><link rel="prefetch" href="/Myblog/assets/js/280.a8ecec76.js"><link rel="prefetch" href="/Myblog/assets/js/281.1d19dc5c.js"><link rel="prefetch" href="/Myblog/assets/js/282.ac10f9e2.js"><link rel="prefetch" href="/Myblog/assets/js/283.bea957d8.js"><link rel="prefetch" href="/Myblog/assets/js/284.71cb99ee.js"><link rel="prefetch" href="/Myblog/assets/js/285.12cdc9b8.js"><link rel="prefetch" href="/Myblog/assets/js/286.3d25c0a9.js"><link rel="prefetch" href="/Myblog/assets/js/287.4b2d5762.js"><link rel="prefetch" href="/Myblog/assets/js/288.abb34f54.js"><link rel="prefetch" href="/Myblog/assets/js/289.5ad035a0.js"><link rel="prefetch" href="/Myblog/assets/js/29.a237754d.js"><link rel="prefetch" href="/Myblog/assets/js/290.8da9c739.js"><link rel="prefetch" href="/Myblog/assets/js/291.e108a4e5.js"><link rel="prefetch" href="/Myblog/assets/js/292.90377e68.js"><link rel="prefetch" href="/Myblog/assets/js/293.3dcd64bf.js"><link rel="prefetch" href="/Myblog/assets/js/294.3b32cf75.js"><link rel="prefetch" href="/Myblog/assets/js/295.fbb25511.js"><link rel="prefetch" href="/Myblog/assets/js/296.5831abd5.js"><link rel="prefetch" href="/Myblog/assets/js/297.6e183a75.js"><link rel="prefetch" href="/Myblog/assets/js/298.51202289.js"><link rel="prefetch" href="/Myblog/assets/js/299.fc249364.js"><link rel="prefetch" href="/Myblog/assets/js/3.922f6c10.js"><link rel="prefetch" href="/Myblog/assets/js/30.e61dce10.js"><link rel="prefetch" href="/Myblog/assets/js/300.dfb8a0e0.js"><link rel="prefetch" href="/Myblog/assets/js/301.9169916b.js"><link rel="prefetch" href="/Myblog/assets/js/302.ab6ea225.js"><link rel="prefetch" href="/Myblog/assets/js/303.eddc2890.js"><link rel="prefetch" href="/Myblog/assets/js/304.66dd8f59.js"><link rel="prefetch" href="/Myblog/assets/js/305.57254f57.js"><link rel="prefetch" href="/Myblog/assets/js/306.fc9e0fc7.js"><link rel="prefetch" href="/Myblog/assets/js/307.91bb4038.js"><link rel="prefetch" href="/Myblog/assets/js/308.c79f3a12.js"><link rel="prefetch" href="/Myblog/assets/js/309.0c127ef7.js"><link rel="prefetch" href="/Myblog/assets/js/31.512bca1b.js"><link rel="prefetch" href="/Myblog/assets/js/310.87fe500a.js"><link rel="prefetch" href="/Myblog/assets/js/311.a0f3f2b0.js"><link rel="prefetch" href="/Myblog/assets/js/312.8f90ea34.js"><link rel="prefetch" href="/Myblog/assets/js/32.5e08c158.js"><link rel="prefetch" href="/Myblog/assets/js/33.ccf15cb1.js"><link rel="prefetch" href="/Myblog/assets/js/34.baa517fe.js"><link rel="prefetch" href="/Myblog/assets/js/35.9b64f823.js"><link rel="prefetch" href="/Myblog/assets/js/36.3799b8b3.js"><link rel="prefetch" href="/Myblog/assets/js/37.a428e8df.js"><link rel="prefetch" href="/Myblog/assets/js/38.2fba5061.js"><link rel="prefetch" href="/Myblog/assets/js/39.2872ebf8.js"><link rel="prefetch" href="/Myblog/assets/js/4.09a95eea.js"><link rel="prefetch" href="/Myblog/assets/js/40.8970e3df.js"><link rel="prefetch" href="/Myblog/assets/js/41.f10448e7.js"><link rel="prefetch" href="/Myblog/assets/js/42.519aebf2.js"><link rel="prefetch" href="/Myblog/assets/js/43.582a8621.js"><link rel="prefetch" href="/Myblog/assets/js/44.5ec5e9cd.js"><link rel="prefetch" href="/Myblog/assets/js/45.8cdbee90.js"><link rel="prefetch" href="/Myblog/assets/js/46.d18526a0.js"><link rel="prefetch" href="/Myblog/assets/js/47.163b8b19.js"><link rel="prefetch" href="/Myblog/assets/js/48.49941176.js"><link rel="prefetch" href="/Myblog/assets/js/49.c80a7484.js"><link rel="prefetch" href="/Myblog/assets/js/5.ae96ce12.js"><link rel="prefetch" href="/Myblog/assets/js/50.4c854623.js"><link rel="prefetch" href="/Myblog/assets/js/51.e10e420e.js"><link rel="prefetch" href="/Myblog/assets/js/52.1917f199.js"><link rel="prefetch" href="/Myblog/assets/js/53.7c2aeb3c.js"><link rel="prefetch" href="/Myblog/assets/js/54.ba09b1bf.js"><link rel="prefetch" href="/Myblog/assets/js/55.4c096860.js"><link rel="prefetch" href="/Myblog/assets/js/56.a964bfc2.js"><link rel="prefetch" href="/Myblog/assets/js/57.3e9e55e3.js"><link rel="prefetch" href="/Myblog/assets/js/58.94bca894.js"><link rel="prefetch" href="/Myblog/assets/js/59.f22d7e01.js"><link rel="prefetch" href="/Myblog/assets/js/6.e25fbd97.js"><link rel="prefetch" href="/Myblog/assets/js/60.2afc99e9.js"><link rel="prefetch" href="/Myblog/assets/js/61.e0823700.js"><link rel="prefetch" href="/Myblog/assets/js/62.0f090475.js"><link rel="prefetch" href="/Myblog/assets/js/63.29587703.js"><link rel="prefetch" href="/Myblog/assets/js/64.2d35757b.js"><link rel="prefetch" href="/Myblog/assets/js/65.a1ba2636.js"><link rel="prefetch" href="/Myblog/assets/js/66.5f925e3c.js"><link rel="prefetch" href="/Myblog/assets/js/67.1c7075c9.js"><link rel="prefetch" href="/Myblog/assets/js/68.5bd3decd.js"><link rel="prefetch" href="/Myblog/assets/js/69.63818e44.js"><link rel="prefetch" href="/Myblog/assets/js/7.46c52c6d.js"><link rel="prefetch" href="/Myblog/assets/js/70.44293f23.js"><link rel="prefetch" href="/Myblog/assets/js/71.6beb56b3.js"><link rel="prefetch" href="/Myblog/assets/js/72.24d329f5.js"><link rel="prefetch" href="/Myblog/assets/js/73.8f66123f.js"><link rel="prefetch" href="/Myblog/assets/js/74.0bfce5fd.js"><link rel="prefetch" href="/Myblog/assets/js/75.b9f6e631.js"><link rel="prefetch" href="/Myblog/assets/js/76.06511777.js"><link rel="prefetch" href="/Myblog/assets/js/77.a70df85c.js"><link rel="prefetch" href="/Myblog/assets/js/78.12ce6ff8.js"><link rel="prefetch" href="/Myblog/assets/js/79.ec76d56b.js"><link rel="prefetch" href="/Myblog/assets/js/8.b10f7278.js"><link rel="prefetch" href="/Myblog/assets/js/80.fe94329c.js"><link rel="prefetch" href="/Myblog/assets/js/81.eea9a7b1.js"><link rel="prefetch" href="/Myblog/assets/js/82.cf3c500d.js"><link rel="prefetch" href="/Myblog/assets/js/83.3f296553.js"><link rel="prefetch" href="/Myblog/assets/js/84.ba40d205.js"><link rel="prefetch" href="/Myblog/assets/js/85.31efecf2.js"><link rel="prefetch" href="/Myblog/assets/js/86.1516478f.js"><link rel="prefetch" href="/Myblog/assets/js/87.368bdc5b.js"><link rel="prefetch" href="/Myblog/assets/js/88.965107ed.js"><link rel="prefetch" href="/Myblog/assets/js/89.87ef5709.js"><link rel="prefetch" href="/Myblog/assets/js/9.1813d78e.js"><link rel="prefetch" href="/Myblog/assets/js/90.8496e84f.js"><link rel="prefetch" href="/Myblog/assets/js/91.767d8f6a.js"><link rel="prefetch" href="/Myblog/assets/js/92.9efc7ab7.js"><link rel="prefetch" href="/Myblog/assets/js/93.8e6bbd99.js"><link rel="prefetch" href="/Myblog/assets/js/94.0039cb1e.js"><link rel="prefetch" href="/Myblog/assets/js/95.9bdc6aa4.js"><link rel="prefetch" href="/Myblog/assets/js/96.46122572.js"><link rel="prefetch" href="/Myblog/assets/js/97.c3990d71.js"><link rel="prefetch" href="/Myblog/assets/js/98.112b9cc9.js"><link rel="prefetch" href="/Myblog/assets/js/99.7b3a774f.js">
+    <link rel="stylesheet" href="/Myblog/assets/css/0.styles.baca3271.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Myblog/" class="home-link router-link-active"><!----> <span class="site-name">麦仁博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Myblog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/Myblog/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>javaScript笔记精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/03dd97/" class="nav-link">JS常用案例</a></li></ul></li><li class="dropdown-item"><h4>vue学习精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/0082e9/" class="nav-link">《vue基本知识点》</a></li><li class="dropdown-subitem"><a href="/Myblog/pages/24e9bb/" class="nav-link">《vue3的使用》</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Myblog/backEnd/" class="nav-link">后端</a></div><div class="nav-item"><a href="/Myblog/englishLife/" class="nav-link">英语</a></div><div class="nav-item"><a href="/Myblog/bookLife/" class="nav-link">读书</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/Myblog/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/Myblog/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/Myblog/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/Myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/Myblog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/Myblog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/Myblog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/Myblog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/MaiRen1997/Myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/Myblog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/Myblog/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>javaScript笔记精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/03dd97/" class="nav-link">JS常用案例</a></li></ul></li><li class="dropdown-item"><h4>vue学习精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/0082e9/" class="nav-link">《vue基本知识点》</a></li><li class="dropdown-subitem"><a href="/Myblog/pages/24e9bb/" class="nav-link">《vue3的使用》</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Myblog/backEnd/" class="nav-link">后端</a></div><div class="nav-item"><a href="/Myblog/englishLife/" class="nav-link">英语</a></div><div class="nav-item"><a href="/Myblog/bookLife/" class="nav-link">读书</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/Myblog/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/Myblog/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/Myblog/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/Myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/Myblog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/Myblog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/Myblog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/Myblog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/MaiRen1997/Myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML的使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javaScript基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git的使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>React框架</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Myblog/pages/50dd4a/" class="sidebar-link">vue与react写法异同</a></li><li><a href="/Myblog/pages/e04516/" class="sidebar-link">React基础</a></li><li><a href="/Myblog/pages/758d9b/" class="sidebar-link">进阶(生命周期+组件通信)</a></li><li><a href="/Myblog/pages/791de6/" class="sidebar-link">ReactRouter</a></li><li><a href="/Myblog/pages/443766/" aria-current="page" class="active sidebar-link">ReactHooks</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#usestate-保存组件状态" class="sidebar-link">useState 保存组件状态</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#useeffect-处理副作用" class="sidebar-link">useEffect 处理副作用</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#usecontext-减少组件层级" class="sidebar-link">useContext 减少组件层级</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#usereducer" class="sidebar-link">useReducer</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#usecallback-记忆函数" class="sidebar-link">useCallback 记忆函数</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#usememo-记忆组件" class="sidebar-link">useMemo 记忆组件</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#useref-保存引用值" class="sidebar-link">useRef 保存引用值</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#useimperativehandle-透传-ref" class="sidebar-link">useImperativeHandle 透传 Ref</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#uselayouteffect-同步执行副作用" class="sidebar-link">useLayoutEffect 同步执行副作用</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/443766/#useeffect和uselayouteffect区别" class="sidebar-link">useEffect和useLayoutEffect区别</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack的使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vite的使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node的使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Nuxt</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>tailWindCss</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>postman与自动化测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Interview</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>填坑笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/Myblog/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/Myblog/web/#前端" data-v-06225672>前端</a></li><li data-v-06225672><a href="/Myblog/web/#React框架" data-v-06225672>React框架</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/MaiRen1997" target="_blank" title="作者" class="beLink" data-v-06225672>Riverside Joy</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2024-08-02</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">ReactHooks<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="usestate-保存组件状态"><a href="#usestate-保存组件状态" class="header-anchor">#</a> useState 保存组件状态</h2> <p>在类组件中，我们使用 <code>this.state</code> 来保存组件状态，并对其修改触发组件重新渲染。比如下面这个简单的计数器组件，很好诠释了类组件如何运行：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+      name: &quot;alife&quot;
+    };
+  }
+  render() {
+    const { count } = this.state;
+    return (
+      &lt;div&gt;
+        Count: {count}
+        &lt;button onClick={() =&gt; this.setState({ count: count + 1 })}&gt;+&lt;/button&gt;
+        &lt;button onClick={() =&gt; this.setState({ count: count - 1 })}&gt;-&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>一个简单的计数器组件就完成了，而在函数组件中，由于没有 this 这个黑魔法，React 通过 useState 来帮我们保存组件的状态。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { useState } from &quot;react&quot;;
+function App() {
+  const [obj, setObject] = useState({
+    count: 0,
+    name: &quot;alife&quot;
+  });
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      Count: {obj.count}
+      &lt;button onClick={() =&gt; setObject({ ...obj, count: obj.count + 1 })}&gt;+&lt;/button&gt;
+      &lt;button onClick={() =&gt; setObject({ ...obj, count: obj.count - 1 })}&gt;-&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>通过传入 useState 参数后返回一个带有默认状态和改变状态函数的数组。通过传入新状态给函数来改变原本的状态值。<strong>值得注意的是 useState 不帮助你处理状态，相较于 setState 非覆盖式更新状态，useState 覆盖式更新状态，需要开发者自己处理逻辑。(代码如上)</strong></p> <p>似乎有个 useState 后，函数组件也可以拥有自己的状态了，但仅仅是这样完全不够。</p> <h2 id="useeffect-处理副作用"><a href="#useeffect-处理副作用" class="header-anchor">#</a> useEffect 处理副作用</h2> <p>函数组件能保存状态，但是对于异步请求，副作用的操作还是无能为力，所以 React 提供了 useEffect 来帮助开发者处理函数组件的副作用，在介绍新 API 之前，我们先来看看类组件是怎么做的：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+class App extends Component {
+  state = {
+    count: 1
+  };
+  componentDidMount() {
+    const { count } = this.state;
+    document.title = &quot;componentDidMount&quot; + count;
+    this.timer = setInterval(() =&gt; {
+      this.setState(({ count }) =&gt; ({
+        count: count + 1
+      }));
+    }, 1000);
+  }
+  componentDidUpdate() {
+    const { count } = this.state;
+    document.title = &quot;componentDidMount&quot; + count;
+  }
+  componentWillUnmount() {
+    document.title = &quot;componentWillUnmount&quot;;
+    clearInterval(this.timer);
+  }
+  render() {
+    const { count } = this.state;
+    return (
+      &lt;div&gt;
+        Count:{count}
+        &lt;button onClick={() =&gt; clearInterval(this.timer)}&gt;clear&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>在例子中，组件每隔一秒更新组件状态，并且每次触发更新都会触发 document.title 的更新(副作用)，而在组件卸载时修改 document.title（类似于清除）</p> <p>从例子中可以看到，一些重复的功能开发者需要在 componentDidMount 和 componentDidUpdate 重复编写，而如果使用 useEffect 则完全不一样。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { useState, useEffect } from &quot;react&quot;;
+let timer = null;
+function App() {
+  const [count, setCount] = useState(0);
+  useEffect(() =&gt; {
+    document.title = &quot;componentDidMount&quot; + count;
+  },[count]);
+
+  useEffect(() =&gt; {
+    timer = setInterval(() =&gt; {
+      setCount(prevCount =&gt; prevCount + 1);
+    }, 1000);
+    // 一定注意下这个顺序：
+    // 告诉react在下次重新渲染组件之后，同时是下次执行上面setInterval之前调用
+    return () =&gt; {
+      document.title = &quot;componentWillUnmount&quot;;
+      clearInterval(timer);
+    };
+  }, []);
+  return (
+    &lt;div&gt;
+      Count: {count}
+      &lt;button onClick={() =&gt; clearInterval(timer)}&gt;clear&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>我们使用 useEffect 重写了上面的例子，<strong>useEffect 第一个参数接收一个函数，可以用来做一些副作用比如异步请求，修改外部参数等行为，而第二个参数称之为dependencies，是一个数组，如果数组中的值变化才会触发 执行useEffect 第一个参数中的函数。返回值(如果有)则在组件销毁或者调用函数前调用</strong>。</p> <ul><li>1.比如第一个 useEffect 中，理解起来就是一旦 count 值发生改变，则修改 documen.title 值；</li> <li>2.而第二个 useEffect 中传递了一个空数组[]，这种情况下只有在组件初始化或销毁的时候才会触发，用来代替 componentDidMount 和 componentWillUnmount，慎用；</li> <li><ol><li>还有另外一个情况，就是不传递第二个参数，也就是useEffect只接收了第一个函数参数，代表不监听任何参数变化。每次渲染DOM之后，都会执行useEffect中的函数。</li></ol></li></ul> <p>基于这个强大 Hooks，我们可以模拟封装出其他生命周期函数，比如 componentDidUpdate 代码十分简单</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function useUpdate(fn) {
+    // useRef 创建一个引用
+    const mounting = useRef(true);
+    useEffect(() =&gt; {
+      if (mounting.current) {
+        mounting.current = false;
+      } else {
+        fn();
+      }
+    });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>现在我们有了 useState 管理状态，useEffect 处理副作用，异步逻辑，学会这两招足以应对大部分类组件的使用场景。</p> <h2 id="usecontext-减少组件层级"><a href="#usecontext-减少组件层级" class="header-anchor">#</a> useContext 减少组件层级</h2> <p>上面介绍了 useState、useEffect 这两个最基本的 API，接下来介绍的 useContext 是 React 帮你封装好的，用来处理多层级传递数据的方式，在以前组件树种，跨层级祖先组件想要给孙子组件传递数据的时候，除了一层层 props 往下透传之外，我们还可以使用 React Context API 来帮我们做这件事，举个简单的例子：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>const { Provider, Consumer } = React.createContext(null);
+function Bar() {
+  return &lt;Consumer&gt;{color =&gt; &lt;div&gt;{color}&lt;/div&gt;}&lt;/Consumer&gt;;
+}
+function Foo() {
+  return &lt;Bar /&gt;;
+}
+function App() {
+  return (
+    &lt;Provider value={&quot;grey&quot;}&gt;
+      &lt;Foo /&gt;
+    &lt;/Provider&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>通过 React createContext 的语法，在 APP 组件中可以跨过 Foo 组件给 Bar 传递数据。而在 React Hooks 中，我们可以使用 useContext 进行改造。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>const colorContext = React.createContext(&quot;gray&quot;);
+function Bar() {
+  const color = useContext(colorContext);
+  return &lt;div&gt;{color}&lt;/div&gt;;
+}
+function Foo() {
+  return &lt;Bar /&gt;;
+}
+function App() {
+  return (
+    &lt;colorContext.Provider value={&quot;red&quot;}&gt;
+      &lt;Foo /&gt;
+    &lt;/colorContext.Provider&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>传递给 useContext 的是 context 而不是 consumer，返回值即是想要透传的数据了。用法很简单，使用 useContext 可以解决 Consumer 多状态嵌套的问题。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function HeaderBar() {
+  return (
+    &lt;CurrentUser.Consumer&gt;
+      {user =&gt;
+        &lt;Notifications.Consumer&gt;
+          {notifications =&gt;
+            &lt;header&gt;
+              Welcome back, {user.name}!
+              You have {notifications.length} notifications.
+            &lt;/header&gt;
+          }
+      }
+    &lt;/CurrentUser.Consumer&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>而使用 useContext 则变得十分简洁，可读性更强且不会增加组件树深度。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function HeaderBar() {
+  const user = useContext(CurrentUser);
+  const notifications = useContext(Notifications);
+  return (
+    &lt;header&gt;
+      Welcome back, {user.name}!
+      You have {notifications.length} notifications.
+    &lt;/header&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="usereducer"><a href="#usereducer" class="header-anchor">#</a> useReducer</h2> <p>useReducer 这个 Hooks 在使用上几乎跟 Redux/React-Redux 一模一样，唯一缺少的就是无法使用 redux 提供的中间件。我们将上述的计时器组件改写为 useReducer，</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { useReducer } from &quot;react&quot;;
+const initialState = {
+  count: 0
+};
+function reducer(state, action) {
+  switch (action.type) {
+    case &quot;increment&quot;:
+      return { count: state.count + action.payload };
+    case &quot;decrement&quot;:
+      return { count: state.count - action.payload };
+    default:
+      throw new Error();
+  }
+}
+function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    &lt;&gt;
+      Count: {state.count}
+      &lt;button onClick={() =&gt; dispatch({ type: &quot;increment&quot;, payload: 5 })}&gt;
+        +
+      &lt;/button&gt;
+      &lt;button onClick={() =&gt; dispatch({ type: &quot;decrement&quot;, payload: 5 })}&gt;
+        -
+      &lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>用法跟 Redux 基本上是一致的，用法也很简单，算是提供一个 mini 的 Redux 版本。</p> <h2 id="usecallback-记忆函数"><a href="#usecallback-记忆函数" class="header-anchor">#</a> useCallback 记忆函数</h2> <p>在类组件中，我们经常犯下面这样的错误：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>class App {
+    render() {
+        return &lt;div&gt;
+            &lt;SomeComponent style={{ fontSize: 14 }} doSomething={ () =&gt; { console.log('do something'); }}  /&gt;
+        &lt;/div&gt;;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样写有什么坏处呢？一旦 App 组件的 props 或者状态改变了就会触发重渲染，即使跟 SomeComponent 组件不相关，<strong>由于每次 render 都会产生新的 style 和 doSomething（因为重新render前后， style 和 doSomething分别指向了不同的引用）</strong>，所以会导致 SomeComponent 重新渲染，倘若 SomeComponent 是一个大型的组件树，这样的 Virtual Dom 的比较显然是很浪费的，解决的办法也很简单，将参数抽离成变量。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>const fontSizeStyle = { fontSize: 14 };
+class App {
+    doSomething = () =&gt; {
+        console.log('do something');
+    }
+    render() {
+        return &lt;div&gt;
+            &lt;SomeComponent style={fontSizeStyle} doSomething={ this.doSomething }  /&gt;
+        &lt;/div&gt;;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>在类组件中，我们还可以通过 this 这个对象来存储函数，而在函数组件中没办法进行挂载了。所以函数组件在每次渲染的时候如果有传递函数的话都会重渲染子组件。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const handleClick = () =&gt; {
+    console.log('Click happened');
+  }
+  return &lt;SomeComponent onClick={handleClick}&gt;Click Me&lt;/SomeComponent&gt;;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><p>这里多说一句，一版把<strong>函数式组件理解为class组件render函数的语法糖</strong>，所以每次重新渲染的时候，函数式组件内部所有的代码都会重新执行一遍。所以上述代码中每次render，handleClick都会是一个新的引用，所以也就是说传递给SomeComponent组件的props.onClick一直在变(因为每次都是一个新的引用)，所以才会说这种情况下，函数组件在每次渲染的时候如果有传递函数的话都会重渲染子组件。</p></blockquote> <p>而有了 useCallback 就不一样了，你可以通过 useCallback 获得一个记忆后的函数。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const memoizedHandleClick = useCallback(() =&gt; {
+    console.log('Click happened')
+  }, []); // 空数组代表无论什么情况下该函数都不会发生改变
+  return &lt;SomeComponent onClick={memoizedHandleClick}&gt;Click Me&lt;/SomeComponent&gt;;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>老规矩，第二个参数传入一个数组，数组中的每一项一旦值或者引用发生改变，useCallback 就会重新返回一个新的记忆函数提供给后面进行渲染。</p> <p>这样只要子组件继承了 PureComponent 或者使用 React.memo 就可以有效避免不必要的 VDOM 渲染。</p> <h2 id="usememo-记忆组件"><a href="#usememo-记忆组件" class="header-anchor">#</a> useMemo 记忆组件</h2> <p>useCallback 的功能完全可以由 useMemo 所取代，如果你想通过使用 useMemo 返回一个记忆函数也是完全可以的。</p> <div class="language-rust line-numbers-mode"><pre class="language-rust"><code><span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token keyword">fn</span><span class="token punctuation">,</span> inputs<span class="token punctuation">)</span> is equivalent to <span class="token function">useMemo</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">fn</span><span class="token punctuation">,</span> inputs<span class="token punctuation">)</span><span class="token punctuation">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>所以前面使用 useCallback 的例子可以使用 useMemo 进行改写：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const memoizedHandleClick = useMemo(() =&gt; () =&gt; {
+    console.log('Click happened')
+  }, []); // 空数组代表无论什么情况下该函数都不会发生改变
+  return &lt;SomeComponent onClick={memoizedHandleClick}&gt;Click Me&lt;/SomeComponent&gt;;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>唯一的区别是：**useCallback 不会执行第一个参数函数，而是将它返回给你，而 useMemo 会执行第一个函数并且将函数执行结果返回给你。**所以在前面的例子中，可以返回 handleClick 来达到存储函数的目的。</p> <p>所以 useCallback 常用记忆事件函数，生成记忆后的事件函数并传递给子组件使用。而 useMemo 更适合经过函数计算得到一个确定的值，比如记忆组件。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function Parent({ a, b }) {
+  // Only re-rendered if `a` changes:
+  const child1 = useMemo(() =&gt; () =&gt; &lt;Child1 a={a} /&gt;, [a]);
+  // Only re-rendered if `b` changes:
+  const child2 = useMemo(() =&gt; () =&gt; &lt;Child2 b={b} /&gt;, [b]);
+  return (
+    &lt;&gt;
+      {child1}
+      {child2}
+    &lt;/&gt;
+  )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>当 a/b 改变时，child1/child2 才会重新渲染。从例子可以看出来，只有在第二个参数数组的值发生变化时，才会触发子组件的更新。</p> <h2 id="useref-保存引用值"><a href="#useref-保存引用值" class="header-anchor">#</a> useRef 保存引用值</h2> <p>useRef 跟 createRef 类似，都可以用来生成对 DOM 对象的引用，看个简单的例子：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { useState, useRef } from &quot;react&quot;;
+function App() {
+  let [name, setName] = useState(&quot;Nate&quot;);
+  let nameRef = useRef();
+  const submitButton = () =&gt; {
+    setName(nameRef.current.value);
+  };
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;p&gt;{name}&lt;/p&gt;
+
+      &lt;div&gt;
+        &lt;input ref={nameRef} type=&quot;text&quot; /&gt;
+        &lt;button type=&quot;button&quot; onClick={submitButton}&gt;
+          Submit
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>useRef 返回的值传递给组件或者 DOM 的 ref 属性，就可以通过 ref.current 值<strong>访问组件或真实的 DOM 节点，重点是组件也是可以访问到的</strong>，从而可以对 DOM 进行一些操作，比如监听事件等等。</p> <p>当然 useRef 远比你想象中的功能更加强大，useRef 的功能有点像类属性，或者说您想要在组件中记录一些值，并且这些值在稍后可以更改。</p> <p>利用 useRef 就可以绕过 Capture Value 的特性。可以认为 ref 在所有 Render 过程中保持着唯一引用，因此所有对 ref 的赋值或取值，拿到的都只有一个最终状态，而不会在每个 Render 间存在隔离。</p> <p>React Hooks 中存在 Capture Value 的特性：</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    setTimeout(() =&gt; {
+      alert(&quot;count: &quot; + count);
+    }, 3000);
+  }, [count]);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;增加 count&lt;/button&gt;
+      &lt;button onClick={() =&gt; setCount(count - 1)}&gt;减少 count&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>先点击增加button，后点击减少button，3秒后先alert 1，后alert 0，而不是alert两次0。这就是所谓的 capture value 的特性。而在<strong>类组件</strong>中 3 秒后输出的就是修改后的值，因为这时候** message 是挂载在 this 变量上，它保留的是一个引用值**，对 this 属性的访问都会获取到最新的值。讲到这里你应该就明白了，useRef 创建一个引用，就可以有效规避 React Hooks 中 Capture Value 特性。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const count = useRef(0);
+
+  const showCount = () =&gt; {
+    alert(&quot;count: &quot; + count.current);
+  };
+
+  const handleClick = number =&gt; {
+    count.current = count.current + number;
+    setTimeout(showCount, 3000);
+  };
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count.current} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; handleClick(1)}&gt;增加 count&lt;/button&gt;
+      &lt;button onClick={() =&gt; handleClick(-1)}&gt;减少 count&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>只要将赋值与取值的对象变成 useRef，而不是 useState，就可以躲过 capture value 特性，在 3 秒后得到最新的值。</p> <h2 id="useimperativehandle-透传-ref"><a href="#useimperativehandle-透传-ref" class="header-anchor">#</a> useImperativeHandle 透传 Ref</h2> <p>通过 useImperativeHandle 用于让父组件获取子组件内的索引</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>import React, { useRef, useEffect, useImperativeHandle, forwardRef } from &quot;react&quot;;
+function ChildInputComponent(props, ref) {
+  const inputRef = useRef(null);
+  useImperativeHandle(ref, () =&gt; inputRef.current);
+  return &lt;input type=&quot;text&quot; name=&quot;child input&quot; ref={inputRef} /&gt;;
+}
+const ChildInput = forwardRef(ChildInputComponent);
+function App() {
+  const inputRef = useRef(null);
+  useEffect(() =&gt; {
+    inputRef.current.focus();
+  }, []);
+  return (
+    &lt;div&gt;
+      &lt;ChildInput ref={inputRef} /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>通过这种方式，App 组件可以获得子组件的 input 的 DOM 节点。</p> <h2 id="uselayouteffect-同步执行副作用"><a href="#uselayouteffect-同步执行副作用" class="header-anchor">#</a> useLayoutEffect 同步执行副作用</h2> <p>大部分情况下，使用 useEffect 就可以帮我们处理组件的副作用，但是如果想要同步调用一些副作用，比如对 DOM 的操作，就需要使用 useLayoutEffect，useLayoutEffect 中的副作用会在 DOM 更新之后同步执行。</p> <div class="language-source-js line-numbers-mode"><pre class="language-text"><code>function App() {
+  const [width, setWidth] = useState(0);
+  useLayoutEffect(() =&gt; {
+    const title = document.querySelector(&quot;#title&quot;);
+    const titleWidth = title.getBoundingClientRect().width;
+    console.log(&quot;useLayoutEffect&quot;);
+    if (width !== titleWidth) {
+      setWidth(titleWidth);
+    }
+  });
+  useEffect(() =&gt; {
+    console.log(&quot;useEffect&quot;);
+  });
+  return (
+    &lt;div&gt;
+      &lt;h1 id=&quot;title&quot;&gt;hello&lt;/h1&gt;
+      &lt;h2&gt;{width}&lt;/h2&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>在上面的例子中，useLayoutEffect 会在 render，DOM 更新之后同步触发函数，会优于 useEffect 异步触发函数。</p> <h2 id="useeffect和uselayouteffect区别"><a href="#useeffect和uselayouteffect区别" class="header-anchor">#</a> useEffect和useLayoutEffect区别</h2> <p><strong>简单来说就是调用时机不同，<code>useLayoutEffect</code>和原来<code>componentDidMount</code>&amp;<code>componentDidUpdate</code>一致，在react完成DOM更新后马上</strong>同步<strong>调用的代码，会阻塞页面渲染。而<code>useEffect</code>是会在整个页面渲染完才会调用的代码。</strong></p> <p>官方建议优先使用<code>useEffect</code></p> <blockquote><p>However, <strong>we recommend starting with useEffect first</strong> and only trying useLayoutEffect if that causes a problem.</p></blockquote> <p>在实际使用时如果想避免<strong>页面抖动</strong>（在<code>useEffect</code>里修改DOM很有可能出现）的话，可以把需要操作DOM的代码放在<code>useLayoutEffect</code>里。关于使用<code>useEffect</code>导致页面抖动。</p> <p>不过<code>useLayoutEffect</code>在服务端渲染时会出现一个warning，要消除的话得用<code>useEffect</code>代替或者推迟渲染时机。</p></div></div> <!----> <div class="page-edit"><div class="edit-link"><a href="https://github.com/MaiRen1997/Myblog/edit/master/docs/01.前端/30.React框架/40.ReactHooks.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/2/2024, 2:20:25 AM</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/Myblog/pages/791de6/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">ReactRouter</div></a> <a href="/Myblog/pages/4033b6/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Jpom部署前端项目</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Myblog/pages/791de6/" class="prev">ReactRouter</a></span> <span class="next"><a href="/Myblog/pages/4033b6/">Jpom部署前端项目</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/Myblog/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/Myblog/pages/791de6/"><div>
+            ReactRouter
+            <!----></div></a> <span class="date">08-02</span></dt></dl><dl><dd>02</dd> <dt><a href="/Myblog/pages/758d9b/"><div>
+            进阶(生命周期+组件通信)
+            <!----></div></a> <span class="date">08-02</span></dt></dl><dl><dd>03</dd> <dt><a href="/Myblog/pages/955649/"><div>
+            配置
+            <!----></div></a> <span class="date">08-01</span></dt></dl> <dl><dd></dd> <dt><a href="/Myblog/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/Myblog/assets/js/app.5421f7e4.js" defer></script><script src="/Myblog/assets/js/2.e664d817.js" defer></script><script src="/Myblog/assets/js/160.4e1e9e92.js" defer></script>
+  </body>
+</html>
