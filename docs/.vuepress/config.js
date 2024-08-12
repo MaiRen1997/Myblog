@@ -9,16 +9,15 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  plugins: {
-    
-  },
+  plugins: [
+  ],
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
   theme: 'vdoing',
   themeConfig: {
     nav,
     sidebar: 'structuring',
-    lastUpdated: 'Last Updated', // string | boolean 最后更新时间
+    lastUpdated: '最后更新时间', // string | boolean 最后更新时间
     // 线上编辑笔记
     repo: 'https://github.com/MaiRen1997/Myblog', // Github仓库地址
     docsDir: 'docs', // .md文件放在了docs目录下
