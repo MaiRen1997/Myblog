@@ -18,6 +18,7 @@ module.exports = {
     nav,
     sidebar: 'structuring',
     lastUpdated: '最后更新时间', // string | boolean 最后更新时间
+    noImgNumbering: true, // 忽略图片编号
     // 线上编辑笔记
     repo: 'https://github.com/MaiRen1997/Myblog', // Github仓库地址
     docsDir: 'docs', // .md文件放在了docs目录下
@@ -28,6 +29,11 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    //排除特定文件夹
+    ignore: function(fileName, dir) {
+      // 如果文件夹名称包含"images"，则不进行编号
+      return /img/.test(dir);
+    },
   },
   // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
   author: {
