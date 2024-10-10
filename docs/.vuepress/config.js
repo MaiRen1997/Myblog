@@ -6,10 +6,26 @@ module.exports = {
   title: "麦仁博客",
   description: "记录前端知识、读书学习",
   dest: 'docs/.vuepress/dist/',
-  markdown: {
-    lineNumbers: true,
-  },
   plugins: [
+    [
+      'one-click-copy', // 代码块复制按钮
+      {
+        copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+        copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+        duration: 1000, // prompt message display time.
+        showInMobile: false, // whether to display on the mobile side, default: false.
+      },
+    ],
+    // 思维导图
+    [
+      'one-click-copy', // 代码块复制按钮
+      {
+        copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+        copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+        duration: 1000, // prompt message display time.
+        showInMobile: false, // whether to display on the mobile side, default: false.
+      },
+    ],
   ],
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
@@ -24,6 +40,13 @@ module.exports = {
     docsDir: 'docs', // .md文件放在了docs目录下
     editLinks: true, // 启用编辑链接
     editLinkText: '编辑',
+    extendFrontmatter:{ // 作者
+      author: {
+        name: 'Riverside Joy',
+        link: 'https://github.com/MaiRen1997'
+  
+      }
+    },
   },
   // 使目录栏支持h2~h6
   markdown: {
