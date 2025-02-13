@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>20250208 | 麦仁博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="记录前端知识、读书学习">
+    
+    <link rel="preload" href="/Myblog/assets/css/0.styles.6ca8d52e.css" as="style"><link rel="preload" href="/Myblog/assets/js/app.9c4582c6.js" as="script"><link rel="preload" href="/Myblog/assets/js/2.3c9f4522.js" as="script"><link rel="preload" href="/Myblog/assets/js/379.0bff61eb.js" as="script"><link rel="prefetch" href="/Myblog/assets/js/10.1abc277d.js"><link rel="prefetch" href="/Myblog/assets/js/100.4bae90e1.js"><link rel="prefetch" href="/Myblog/assets/js/101.21659d13.js"><link rel="prefetch" href="/Myblog/assets/js/102.a0c53623.js"><link rel="prefetch" href="/Myblog/assets/js/103.6db43e9b.js"><link rel="prefetch" href="/Myblog/assets/js/104.65a42837.js"><link rel="prefetch" href="/Myblog/assets/js/105.559724f1.js"><link rel="prefetch" href="/Myblog/assets/js/106.1d6a81fd.js"><link rel="prefetch" href="/Myblog/assets/js/107.be90c420.js"><link rel="prefetch" href="/Myblog/assets/js/108.9a2a778f.js"><link rel="prefetch" href="/Myblog/assets/js/109.ff75fd72.js"><link rel="prefetch" href="/Myblog/assets/js/11.d167bd45.js"><link rel="prefetch" href="/Myblog/assets/js/110.ca50678b.js"><link rel="prefetch" href="/Myblog/assets/js/111.bbf76c0f.js"><link rel="prefetch" href="/Myblog/assets/js/112.dbf2c634.js"><link rel="prefetch" href="/Myblog/assets/js/113.53afa664.js"><link rel="prefetch" href="/Myblog/assets/js/114.183cf31c.js"><link rel="prefetch" href="/Myblog/assets/js/115.cc031d5e.js"><link rel="prefetch" href="/Myblog/assets/js/116.116c0282.js"><link rel="prefetch" href="/Myblog/assets/js/117.f85ada18.js"><link rel="prefetch" href="/Myblog/assets/js/118.33f5f444.js"><link rel="prefetch" href="/Myblog/assets/js/119.c5e7803a.js"><link rel="prefetch" href="/Myblog/assets/js/12.e96a6cba.js"><link rel="prefetch" href="/Myblog/assets/js/120.e02f7cf2.js"><link rel="prefetch" href="/Myblog/assets/js/121.c3b717ef.js"><link rel="prefetch" href="/Myblog/assets/js/122.fc255960.js"><link rel="prefetch" href="/Myblog/assets/js/123.863ef7e6.js"><link rel="prefetch" href="/Myblog/assets/js/124.0e7a70b9.js"><link rel="prefetch" href="/Myblog/assets/js/125.e772b632.js"><link rel="prefetch" href="/Myblog/assets/js/126.faa8ec7a.js"><link rel="prefetch" href="/Myblog/assets/js/127.3311b9e5.js"><link rel="prefetch" href="/Myblog/assets/js/128.a488a539.js"><link rel="prefetch" href="/Myblog/assets/js/129.d2b1bc4b.js"><link rel="prefetch" href="/Myblog/assets/js/13.27c5af68.js"><link rel="prefetch" href="/Myblog/assets/js/130.debfd1f8.js"><link rel="prefetch" href="/Myblog/assets/js/131.1d4ed1be.js"><link rel="prefetch" href="/Myblog/assets/js/132.ee7585f4.js"><link rel="prefetch" href="/Myblog/assets/js/133.b9af9557.js"><link rel="prefetch" href="/Myblog/assets/js/134.e37be1ea.js"><link rel="prefetch" href="/Myblog/assets/js/135.27aa1583.js"><link rel="prefetch" href="/Myblog/assets/js/136.2bb29f13.js"><link rel="prefetch" href="/Myblog/assets/js/137.75ff80f3.js"><link rel="prefetch" href="/Myblog/assets/js/138.0031df48.js"><link rel="prefetch" href="/Myblog/assets/js/139.4e027dde.js"><link rel="prefetch" href="/Myblog/assets/js/14.8d08059a.js"><link rel="prefetch" href="/Myblog/assets/js/140.50686333.js"><link rel="prefetch" href="/Myblog/assets/js/141.e930269c.js"><link rel="prefetch" href="/Myblog/assets/js/142.37a9dc5e.js"><link rel="prefetch" href="/Myblog/assets/js/143.5df4d483.js"><link rel="prefetch" href="/Myblog/assets/js/144.fd85d186.js"><link rel="prefetch" href="/Myblog/assets/js/145.219881c7.js"><link rel="prefetch" href="/Myblog/assets/js/146.01aa542d.js"><link rel="prefetch" href="/Myblog/assets/js/147.685cf699.js"><link rel="prefetch" href="/Myblog/assets/js/148.471f7518.js"><link rel="prefetch" href="/Myblog/assets/js/149.6a690af3.js"><link rel="prefetch" href="/Myblog/assets/js/15.b077cb38.js"><link rel="prefetch" href="/Myblog/assets/js/150.f2ebb49d.js"><link rel="prefetch" href="/Myblog/assets/js/151.0f3c9355.js"><link rel="prefetch" href="/Myblog/assets/js/152.cc1e5078.js"><link rel="prefetch" href="/Myblog/assets/js/153.34b5f8cf.js"><link rel="prefetch" href="/Myblog/assets/js/154.654af4b1.js"><link rel="prefetch" href="/Myblog/assets/js/155.125b3d74.js"><link rel="prefetch" href="/Myblog/assets/js/156.9f6f8658.js"><link rel="prefetch" href="/Myblog/assets/js/157.109be7d8.js"><link rel="prefetch" href="/Myblog/assets/js/158.7dd2bdc6.js"><link rel="prefetch" href="/Myblog/assets/js/159.527863bf.js"><link rel="prefetch" href="/Myblog/assets/js/16.549fcf2d.js"><link rel="prefetch" href="/Myblog/assets/js/160.3ce0f184.js"><link rel="prefetch" href="/Myblog/assets/js/161.f98b5d73.js"><link rel="prefetch" href="/Myblog/assets/js/162.da211cc1.js"><link rel="prefetch" href="/Myblog/assets/js/163.872e8836.js"><link rel="prefetch" href="/Myblog/assets/js/164.948f64c3.js"><link rel="prefetch" href="/Myblog/assets/js/165.8a3e9a45.js"><link rel="prefetch" href="/Myblog/assets/js/166.e51b4f4c.js"><link rel="prefetch" href="/Myblog/assets/js/167.c955a2c2.js"><link rel="prefetch" href="/Myblog/assets/js/168.8e39f42c.js"><link rel="prefetch" href="/Myblog/assets/js/169.d8a35451.js"><link rel="prefetch" href="/Myblog/assets/js/17.15785d4d.js"><link rel="prefetch" href="/Myblog/assets/js/170.057956b9.js"><link rel="prefetch" href="/Myblog/assets/js/171.c5fb2fab.js"><link rel="prefetch" href="/Myblog/assets/js/172.aa7feb5b.js"><link rel="prefetch" href="/Myblog/assets/js/173.745e3c4b.js"><link rel="prefetch" href="/Myblog/assets/js/174.06a42d24.js"><link rel="prefetch" href="/Myblog/assets/js/175.4fea13dd.js"><link rel="prefetch" href="/Myblog/assets/js/176.99bfdf8f.js"><link rel="prefetch" href="/Myblog/assets/js/177.d6f3d5ff.js"><link rel="prefetch" href="/Myblog/assets/js/178.9761382c.js"><link rel="prefetch" href="/Myblog/assets/js/179.3bb0e1cc.js"><link rel="prefetch" href="/Myblog/assets/js/18.f2600021.js"><link rel="prefetch" href="/Myblog/assets/js/180.be5c0c62.js"><link rel="prefetch" href="/Myblog/assets/js/181.a25a91f6.js"><link rel="prefetch" href="/Myblog/assets/js/182.07ec03b6.js"><link rel="prefetch" href="/Myblog/assets/js/183.2ce6bf72.js"><link rel="prefetch" href="/Myblog/assets/js/184.66506bd2.js"><link rel="prefetch" href="/Myblog/assets/js/185.cd6699c8.js"><link rel="prefetch" href="/Myblog/assets/js/186.7b619454.js"><link rel="prefetch" href="/Myblog/assets/js/187.159874a1.js"><link rel="prefetch" href="/Myblog/assets/js/188.b8363235.js"><link rel="prefetch" href="/Myblog/assets/js/189.c602d398.js"><link rel="prefetch" href="/Myblog/assets/js/19.0b6e8a5a.js"><link rel="prefetch" href="/Myblog/assets/js/190.6aa05b54.js"><link rel="prefetch" href="/Myblog/assets/js/191.ce1f040c.js"><link rel="prefetch" href="/Myblog/assets/js/192.c90da8f5.js"><link rel="prefetch" href="/Myblog/assets/js/193.df06989f.js"><link rel="prefetch" href="/Myblog/assets/js/194.97f62c14.js"><link rel="prefetch" href="/Myblog/assets/js/195.b2b52ae3.js"><link rel="prefetch" href="/Myblog/assets/js/196.46917946.js"><link rel="prefetch" href="/Myblog/assets/js/197.fd472fe4.js"><link rel="prefetch" href="/Myblog/assets/js/198.bddedf6d.js"><link rel="prefetch" href="/Myblog/assets/js/199.acb2df86.js"><link rel="prefetch" href="/Myblog/assets/js/20.16966f01.js"><link rel="prefetch" href="/Myblog/assets/js/200.e3e9a652.js"><link rel="prefetch" href="/Myblog/assets/js/201.64b91a27.js"><link rel="prefetch" href="/Myblog/assets/js/202.e7ae6b76.js"><link rel="prefetch" href="/Myblog/assets/js/203.902a5f42.js"><link rel="prefetch" href="/Myblog/assets/js/204.b63b73c5.js"><link rel="prefetch" href="/Myblog/assets/js/205.d6d2c3c6.js"><link rel="prefetch" href="/Myblog/assets/js/206.3bee54fb.js"><link rel="prefetch" href="/Myblog/assets/js/207.2d356a6d.js"><link rel="prefetch" href="/Myblog/assets/js/208.950fbd8d.js"><link rel="prefetch" href="/Myblog/assets/js/209.c1589e69.js"><link rel="prefetch" href="/Myblog/assets/js/21.099d4e26.js"><link rel="prefetch" href="/Myblog/assets/js/210.7ead7f67.js"><link rel="prefetch" href="/Myblog/assets/js/211.5b54d0b8.js"><link rel="prefetch" href="/Myblog/assets/js/212.332b8e80.js"><link rel="prefetch" href="/Myblog/assets/js/213.daba7347.js"><link rel="prefetch" href="/Myblog/assets/js/214.8847f3a0.js"><link rel="prefetch" href="/Myblog/assets/js/215.e68ae9d0.js"><link rel="prefetch" href="/Myblog/assets/js/216.e2d951c3.js"><link rel="prefetch" href="/Myblog/assets/js/217.f39dec0b.js"><link rel="prefetch" href="/Myblog/assets/js/218.aeb611eb.js"><link rel="prefetch" href="/Myblog/assets/js/219.f9e41d0e.js"><link rel="prefetch" href="/Myblog/assets/js/22.7c94145d.js"><link rel="prefetch" href="/Myblog/assets/js/220.a3ad50de.js"><link rel="prefetch" href="/Myblog/assets/js/221.a7dd69ea.js"><link rel="prefetch" href="/Myblog/assets/js/222.01c00f73.js"><link rel="prefetch" href="/Myblog/assets/js/223.a0fc6285.js"><link rel="prefetch" href="/Myblog/assets/js/224.9eafdb4d.js"><link rel="prefetch" href="/Myblog/assets/js/225.2093d769.js"><link rel="prefetch" href="/Myblog/assets/js/226.a83866af.js"><link rel="prefetch" href="/Myblog/assets/js/227.995e2b43.js"><link rel="prefetch" href="/Myblog/assets/js/228.0594da7f.js"><link rel="prefetch" href="/Myblog/assets/js/229.3aa983a6.js"><link rel="prefetch" href="/Myblog/assets/js/23.19cd5799.js"><link rel="prefetch" href="/Myblog/assets/js/230.233fe1e8.js"><link rel="prefetch" href="/Myblog/assets/js/231.8d51c184.js"><link rel="prefetch" href="/Myblog/assets/js/232.e5e8e55b.js"><link rel="prefetch" href="/Myblog/assets/js/233.1013dd1c.js"><link rel="prefetch" href="/Myblog/assets/js/234.7da78c88.js"><link rel="prefetch" href="/Myblog/assets/js/235.e2168525.js"><link rel="prefetch" href="/Myblog/assets/js/236.73f4a550.js"><link rel="prefetch" href="/Myblog/assets/js/237.2ad660d8.js"><link rel="prefetch" href="/Myblog/assets/js/238.3dd213cc.js"><link rel="prefetch" href="/Myblog/assets/js/239.ec0cbc8c.js"><link rel="prefetch" href="/Myblog/assets/js/24.3ed8b472.js"><link rel="prefetch" href="/Myblog/assets/js/240.1f90a98b.js"><link rel="prefetch" href="/Myblog/assets/js/241.a339b663.js"><link rel="prefetch" href="/Myblog/assets/js/242.ee6819be.js"><link rel="prefetch" href="/Myblog/assets/js/243.3d766e61.js"><link rel="prefetch" href="/Myblog/assets/js/244.7599b863.js"><link rel="prefetch" href="/Myblog/assets/js/245.e64767df.js"><link rel="prefetch" href="/Myblog/assets/js/246.f73f38ed.js"><link rel="prefetch" href="/Myblog/assets/js/247.02163d6a.js"><link rel="prefetch" href="/Myblog/assets/js/248.c13fb7bd.js"><link rel="prefetch" href="/Myblog/assets/js/249.8cd6abb4.js"><link rel="prefetch" href="/Myblog/assets/js/25.9db3881a.js"><link rel="prefetch" href="/Myblog/assets/js/250.18dbfa8a.js"><link rel="prefetch" href="/Myblog/assets/js/251.696e83c5.js"><link rel="prefetch" href="/Myblog/assets/js/252.7da2330c.js"><link rel="prefetch" href="/Myblog/assets/js/253.0277af1a.js"><link rel="prefetch" href="/Myblog/assets/js/254.9209052c.js"><link rel="prefetch" href="/Myblog/assets/js/255.d029a32e.js"><link rel="prefetch" href="/Myblog/assets/js/256.9a4fab85.js"><link rel="prefetch" href="/Myblog/assets/js/257.65745191.js"><link rel="prefetch" href="/Myblog/assets/js/258.c16c2860.js"><link rel="prefetch" href="/Myblog/assets/js/259.585dd00d.js"><link rel="prefetch" href="/Myblog/assets/js/26.902a246c.js"><link rel="prefetch" href="/Myblog/assets/js/260.95d01953.js"><link rel="prefetch" href="/Myblog/assets/js/261.2c3e2c2a.js"><link rel="prefetch" href="/Myblog/assets/js/262.88ab4b90.js"><link rel="prefetch" href="/Myblog/assets/js/263.8a72888b.js"><link rel="prefetch" href="/Myblog/assets/js/264.f8998525.js"><link rel="prefetch" href="/Myblog/assets/js/265.0f991b91.js"><link rel="prefetch" href="/Myblog/assets/js/266.11361366.js"><link rel="prefetch" href="/Myblog/assets/js/267.e6016482.js"><link rel="prefetch" href="/Myblog/assets/js/268.8b54b159.js"><link rel="prefetch" href="/Myblog/assets/js/269.7f8d1779.js"><link rel="prefetch" href="/Myblog/assets/js/27.a93a0fba.js"><link rel="prefetch" href="/Myblog/assets/js/270.17995603.js"><link rel="prefetch" href="/Myblog/assets/js/271.c037a73b.js"><link rel="prefetch" href="/Myblog/assets/js/272.564c2c91.js"><link rel="prefetch" href="/Myblog/assets/js/273.d506863b.js"><link rel="prefetch" href="/Myblog/assets/js/274.30f0d267.js"><link rel="prefetch" href="/Myblog/assets/js/275.1d156d5e.js"><link rel="prefetch" href="/Myblog/assets/js/276.42b6f10e.js"><link rel="prefetch" href="/Myblog/assets/js/277.3fa907be.js"><link rel="prefetch" href="/Myblog/assets/js/278.8f2981ed.js"><link rel="prefetch" href="/Myblog/assets/js/279.4dfa160a.js"><link rel="prefetch" href="/Myblog/assets/js/28.1cf5a2f2.js"><link rel="prefetch" href="/Myblog/assets/js/280.cd65bcd1.js"><link rel="prefetch" href="/Myblog/assets/js/281.8dad5522.js"><link rel="prefetch" href="/Myblog/assets/js/282.43e875a9.js"><link rel="prefetch" href="/Myblog/assets/js/283.37a6316f.js"><link rel="prefetch" href="/Myblog/assets/js/284.375a623c.js"><link rel="prefetch" href="/Myblog/assets/js/285.9d222394.js"><link rel="prefetch" href="/Myblog/assets/js/286.b1091f93.js"><link rel="prefetch" href="/Myblog/assets/js/287.de7248da.js"><link rel="prefetch" href="/Myblog/assets/js/288.07fd58ac.js"><link rel="prefetch" href="/Myblog/assets/js/289.2d91ebc3.js"><link rel="prefetch" href="/Myblog/assets/js/29.21cbac5e.js"><link rel="prefetch" href="/Myblog/assets/js/290.674b22a5.js"><link rel="prefetch" href="/Myblog/assets/js/291.7abd30a1.js"><link rel="prefetch" href="/Myblog/assets/js/292.c1083cf2.js"><link rel="prefetch" href="/Myblog/assets/js/293.4c651e6d.js"><link rel="prefetch" href="/Myblog/assets/js/294.4afe4c86.js"><link rel="prefetch" href="/Myblog/assets/js/295.a0e5f5d1.js"><link rel="prefetch" href="/Myblog/assets/js/296.c1d960df.js"><link rel="prefetch" href="/Myblog/assets/js/297.6d633878.js"><link rel="prefetch" href="/Myblog/assets/js/298.efd1c3ae.js"><link rel="prefetch" href="/Myblog/assets/js/299.e84a1036.js"><link rel="prefetch" href="/Myblog/assets/js/3.16dfc5d3.js"><link rel="prefetch" href="/Myblog/assets/js/30.0a0e9acc.js"><link rel="prefetch" href="/Myblog/assets/js/300.5ea881ff.js"><link rel="prefetch" href="/Myblog/assets/js/301.7a8ff20f.js"><link rel="prefetch" href="/Myblog/assets/js/302.039eee3a.js"><link rel="prefetch" href="/Myblog/assets/js/303.31b36c78.js"><link rel="prefetch" href="/Myblog/assets/js/304.7a87783f.js"><link rel="prefetch" href="/Myblog/assets/js/305.fa9f0921.js"><link rel="prefetch" href="/Myblog/assets/js/306.965e99d6.js"><link rel="prefetch" href="/Myblog/assets/js/307.83842464.js"><link rel="prefetch" href="/Myblog/assets/js/308.e50098e6.js"><link rel="prefetch" href="/Myblog/assets/js/309.1a171d51.js"><link rel="prefetch" href="/Myblog/assets/js/31.ba6f4b5c.js"><link rel="prefetch" href="/Myblog/assets/js/310.6b0d51b8.js"><link rel="prefetch" href="/Myblog/assets/js/311.8a6a09c6.js"><link rel="prefetch" href="/Myblog/assets/js/312.c1b4fe36.js"><link rel="prefetch" href="/Myblog/assets/js/313.649c0939.js"><link rel="prefetch" href="/Myblog/assets/js/314.4153c240.js"><link rel="prefetch" href="/Myblog/assets/js/315.bc795ef2.js"><link rel="prefetch" href="/Myblog/assets/js/316.79b79116.js"><link rel="prefetch" href="/Myblog/assets/js/317.a418db4e.js"><link rel="prefetch" href="/Myblog/assets/js/318.769dabf4.js"><link rel="prefetch" href="/Myblog/assets/js/319.9767a5e0.js"><link rel="prefetch" href="/Myblog/assets/js/32.f43463fb.js"><link rel="prefetch" href="/Myblog/assets/js/320.388b1e81.js"><link rel="prefetch" href="/Myblog/assets/js/321.c293bdd3.js"><link rel="prefetch" href="/Myblog/assets/js/322.c3357a4b.js"><link rel="prefetch" href="/Myblog/assets/js/323.0e46b6be.js"><link rel="prefetch" href="/Myblog/assets/js/324.b112269a.js"><link rel="prefetch" href="/Myblog/assets/js/325.b437d745.js"><link rel="prefetch" href="/Myblog/assets/js/326.4d23040c.js"><link rel="prefetch" href="/Myblog/assets/js/327.ed6c5e8a.js"><link rel="prefetch" href="/Myblog/assets/js/328.7619bb08.js"><link rel="prefetch" href="/Myblog/assets/js/329.aa8d6349.js"><link rel="prefetch" href="/Myblog/assets/js/33.ac7edbe6.js"><link rel="prefetch" href="/Myblog/assets/js/330.3224fcc3.js"><link rel="prefetch" href="/Myblog/assets/js/331.4ac13961.js"><link rel="prefetch" href="/Myblog/assets/js/332.17e77075.js"><link rel="prefetch" href="/Myblog/assets/js/333.dda6c8e5.js"><link rel="prefetch" href="/Myblog/assets/js/334.d0e342f4.js"><link rel="prefetch" href="/Myblog/assets/js/335.6b1b8fb6.js"><link rel="prefetch" href="/Myblog/assets/js/336.05e02b3f.js"><link rel="prefetch" href="/Myblog/assets/js/337.e434fad1.js"><link rel="prefetch" href="/Myblog/assets/js/338.5ada1d88.js"><link rel="prefetch" href="/Myblog/assets/js/339.c3ce6637.js"><link rel="prefetch" href="/Myblog/assets/js/34.58d12161.js"><link rel="prefetch" href="/Myblog/assets/js/340.5ade08c1.js"><link rel="prefetch" href="/Myblog/assets/js/341.8953527f.js"><link rel="prefetch" href="/Myblog/assets/js/342.e6ad7410.js"><link rel="prefetch" href="/Myblog/assets/js/343.a0c767d0.js"><link rel="prefetch" href="/Myblog/assets/js/344.eab78338.js"><link rel="prefetch" href="/Myblog/assets/js/345.3e14a4a7.js"><link rel="prefetch" href="/Myblog/assets/js/346.915cb1a1.js"><link rel="prefetch" href="/Myblog/assets/js/347.3146d8ae.js"><link rel="prefetch" href="/Myblog/assets/js/348.b461d7df.js"><link rel="prefetch" href="/Myblog/assets/js/349.af78afbc.js"><link rel="prefetch" href="/Myblog/assets/js/35.9ad87937.js"><link rel="prefetch" href="/Myblog/assets/js/350.0189064f.js"><link rel="prefetch" href="/Myblog/assets/js/351.00cade6f.js"><link rel="prefetch" href="/Myblog/assets/js/352.1aafa170.js"><link rel="prefetch" href="/Myblog/assets/js/353.85beee97.js"><link rel="prefetch" href="/Myblog/assets/js/354.d0e1db15.js"><link rel="prefetch" href="/Myblog/assets/js/355.d38cdfb8.js"><link rel="prefetch" href="/Myblog/assets/js/356.025dc992.js"><link rel="prefetch" href="/Myblog/assets/js/357.9b890fae.js"><link rel="prefetch" href="/Myblog/assets/js/358.11a09b30.js"><link rel="prefetch" href="/Myblog/assets/js/359.779f2a6a.js"><link rel="prefetch" href="/Myblog/assets/js/36.9eb538e0.js"><link rel="prefetch" href="/Myblog/assets/js/360.bc1608f9.js"><link rel="prefetch" href="/Myblog/assets/js/361.99f7c303.js"><link rel="prefetch" href="/Myblog/assets/js/362.30c931d1.js"><link rel="prefetch" href="/Myblog/assets/js/363.f5e8a256.js"><link rel="prefetch" href="/Myblog/assets/js/364.d2dfe2fa.js"><link rel="prefetch" href="/Myblog/assets/js/365.00529c98.js"><link rel="prefetch" href="/Myblog/assets/js/366.191730c9.js"><link rel="prefetch" href="/Myblog/assets/js/367.6a8c3bab.js"><link rel="prefetch" href="/Myblog/assets/js/368.07f122e0.js"><link rel="prefetch" href="/Myblog/assets/js/369.093cf805.js"><link rel="prefetch" href="/Myblog/assets/js/37.79580a7e.js"><link rel="prefetch" href="/Myblog/assets/js/370.e11fd60f.js"><link rel="prefetch" href="/Myblog/assets/js/371.ef512de0.js"><link rel="prefetch" href="/Myblog/assets/js/372.d235cc25.js"><link rel="prefetch" href="/Myblog/assets/js/373.bf55c789.js"><link rel="prefetch" href="/Myblog/assets/js/374.72889860.js"><link rel="prefetch" href="/Myblog/assets/js/375.1772bff1.js"><link rel="prefetch" href="/Myblog/assets/js/376.5d55aeaa.js"><link rel="prefetch" href="/Myblog/assets/js/377.95c22215.js"><link rel="prefetch" href="/Myblog/assets/js/378.490bd7b8.js"><link rel="prefetch" href="/Myblog/assets/js/38.982e7f16.js"><link rel="prefetch" href="/Myblog/assets/js/380.ac923a76.js"><link rel="prefetch" href="/Myblog/assets/js/381.c7dc0667.js"><link rel="prefetch" href="/Myblog/assets/js/382.cb2cae03.js"><link rel="prefetch" href="/Myblog/assets/js/383.590686b1.js"><link rel="prefetch" href="/Myblog/assets/js/384.877adfd1.js"><link rel="prefetch" href="/Myblog/assets/js/385.253c539c.js"><link rel="prefetch" href="/Myblog/assets/js/386.54bbc82a.js"><link rel="prefetch" href="/Myblog/assets/js/387.a75d3229.js"><link rel="prefetch" href="/Myblog/assets/js/388.c71d3b06.js"><link rel="prefetch" href="/Myblog/assets/js/389.cd807165.js"><link rel="prefetch" href="/Myblog/assets/js/39.791b9e8d.js"><link rel="prefetch" href="/Myblog/assets/js/390.71b947b2.js"><link rel="prefetch" href="/Myblog/assets/js/391.8adafbd8.js"><link rel="prefetch" href="/Myblog/assets/js/392.657490a5.js"><link rel="prefetch" href="/Myblog/assets/js/393.e7e93c55.js"><link rel="prefetch" href="/Myblog/assets/js/4.b94d2056.js"><link rel="prefetch" href="/Myblog/assets/js/40.2e47827f.js"><link rel="prefetch" href="/Myblog/assets/js/41.80c44d66.js"><link rel="prefetch" href="/Myblog/assets/js/42.71b18a86.js"><link rel="prefetch" href="/Myblog/assets/js/43.18e3c2f9.js"><link rel="prefetch" href="/Myblog/assets/js/44.9d25c550.js"><link rel="prefetch" href="/Myblog/assets/js/45.e82b4e2c.js"><link rel="prefetch" href="/Myblog/assets/js/46.0d807821.js"><link rel="prefetch" href="/Myblog/assets/js/47.f08a6a9d.js"><link rel="prefetch" href="/Myblog/assets/js/48.4744a751.js"><link rel="prefetch" href="/Myblog/assets/js/49.527099d1.js"><link rel="prefetch" href="/Myblog/assets/js/5.694ffdf8.js"><link rel="prefetch" href="/Myblog/assets/js/50.aadd029c.js"><link rel="prefetch" href="/Myblog/assets/js/51.27cd5434.js"><link rel="prefetch" href="/Myblog/assets/js/52.0d26dd00.js"><link rel="prefetch" href="/Myblog/assets/js/53.bbff48da.js"><link rel="prefetch" href="/Myblog/assets/js/54.26e8c0a5.js"><link rel="prefetch" href="/Myblog/assets/js/55.162dda21.js"><link rel="prefetch" href="/Myblog/assets/js/56.0b1f5f8c.js"><link rel="prefetch" href="/Myblog/assets/js/57.cb3604da.js"><link rel="prefetch" href="/Myblog/assets/js/58.1ca61f3d.js"><link rel="prefetch" href="/Myblog/assets/js/59.fd0c3694.js"><link rel="prefetch" href="/Myblog/assets/js/6.9623dbfe.js"><link rel="prefetch" href="/Myblog/assets/js/60.24869d36.js"><link rel="prefetch" href="/Myblog/assets/js/61.85603bde.js"><link rel="prefetch" href="/Myblog/assets/js/62.cd351b42.js"><link rel="prefetch" href="/Myblog/assets/js/63.bf916a5b.js"><link rel="prefetch" href="/Myblog/assets/js/64.1591852e.js"><link rel="prefetch" href="/Myblog/assets/js/65.24f56934.js"><link rel="prefetch" href="/Myblog/assets/js/66.d8627baf.js"><link rel="prefetch" href="/Myblog/assets/js/67.b3fadfd9.js"><link rel="prefetch" href="/Myblog/assets/js/68.0b098ef7.js"><link rel="prefetch" href="/Myblog/assets/js/69.d4d55be6.js"><link rel="prefetch" href="/Myblog/assets/js/7.dd3dca21.js"><link rel="prefetch" href="/Myblog/assets/js/70.f49b1f8f.js"><link rel="prefetch" href="/Myblog/assets/js/71.a48a397a.js"><link rel="prefetch" href="/Myblog/assets/js/72.0f54541e.js"><link rel="prefetch" href="/Myblog/assets/js/73.78bf9eca.js"><link rel="prefetch" href="/Myblog/assets/js/74.3c4299e2.js"><link rel="prefetch" href="/Myblog/assets/js/75.fafbaeb1.js"><link rel="prefetch" href="/Myblog/assets/js/76.8621e877.js"><link rel="prefetch" href="/Myblog/assets/js/77.e92b14b5.js"><link rel="prefetch" href="/Myblog/assets/js/78.edbb0aa6.js"><link rel="prefetch" href="/Myblog/assets/js/79.2c61dc38.js"><link rel="prefetch" href="/Myblog/assets/js/8.a40678e4.js"><link rel="prefetch" href="/Myblog/assets/js/80.74d73c69.js"><link rel="prefetch" href="/Myblog/assets/js/81.b585b72a.js"><link rel="prefetch" href="/Myblog/assets/js/82.4b00456b.js"><link rel="prefetch" href="/Myblog/assets/js/83.278b7808.js"><link rel="prefetch" href="/Myblog/assets/js/84.32f83870.js"><link rel="prefetch" href="/Myblog/assets/js/85.70da821b.js"><link rel="prefetch" href="/Myblog/assets/js/86.b0f49a4f.js"><link rel="prefetch" href="/Myblog/assets/js/87.89b0dad1.js"><link rel="prefetch" href="/Myblog/assets/js/88.8fa5689f.js"><link rel="prefetch" href="/Myblog/assets/js/89.0373ac03.js"><link rel="prefetch" href="/Myblog/assets/js/9.004ebbef.js"><link rel="prefetch" href="/Myblog/assets/js/90.0715cd68.js"><link rel="prefetch" href="/Myblog/assets/js/91.ab529f87.js"><link rel="prefetch" href="/Myblog/assets/js/92.bd27a95d.js"><link rel="prefetch" href="/Myblog/assets/js/93.a8753835.js"><link rel="prefetch" href="/Myblog/assets/js/94.b29c3231.js"><link rel="prefetch" href="/Myblog/assets/js/95.cc721e89.js"><link rel="prefetch" href="/Myblog/assets/js/96.094ec6ca.js"><link rel="prefetch" href="/Myblog/assets/js/97.65ab93e0.js"><link rel="prefetch" href="/Myblog/assets/js/98.a357b19d.js"><link rel="prefetch" href="/Myblog/assets/js/99.52f5970b.js">
+    <link rel="stylesheet" href="/Myblog/assets/css/0.styles.6ca8d52e.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Myblog/" class="home-link router-link-active"><!----> <span class="site-name">麦仁博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Myblog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/Myblog/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>javaScript笔记精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/03dd97/" class="nav-link">JS常用案例</a></li></ul></li><li class="dropdown-item"><h4>vue学习精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/0082e9/" class="nav-link">《vue基本知识点》</a></li><li class="dropdown-subitem"><a href="/Myblog/pages/24e9bb/" class="nav-link">《vue3的使用》</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Myblog/backEnd/" class="nav-link">后端</a></div><div class="nav-item"><a href="/Myblog/englishLife/" class="nav-link">英语</a></div><div class="nav-item"><a href="/Myblog/bookLife/" class="nav-link">读书</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/Myblog/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/Myblog/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/Myblog/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/Myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/Myblog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/Myblog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/Myblog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/Myblog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/MaiRen1997/Myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/Myblog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/Myblog/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>javaScript笔记精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/03dd97/" class="nav-link">JS常用案例</a></li></ul></li><li class="dropdown-item"><h4>vue学习精选</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Myblog/pages/0082e9/" class="nav-link">《vue基本知识点》</a></li><li class="dropdown-subitem"><a href="/Myblog/pages/24e9bb/" class="nav-link">《vue3的使用》</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Myblog/backEnd/" class="nav-link">后端</a></div><div class="nav-item"><a href="/Myblog/englishLife/" class="nav-link">英语</a></div><div class="nav-item"><a href="/Myblog/bookLife/" class="nav-link">读书</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/Myblog/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/Myblog/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/Myblog/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/Myblog/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/Myblog/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/Myblog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/Myblog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/Myblog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Myblog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/Myblog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/Myblog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/MaiRen1997/Myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/Myblog/pages/68319a/" class="sidebar-link">目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>固定搭配</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>新概念英语一</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>新概念英语二</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/Myblog/pages/f2c713/" class="sidebar-link">语句摘抄</a></li><li><a href="/Myblog/pages/092cac/" class="sidebar-link">月份&amp;周</a></li><li><a href="/Myblog/pages/b0633e/" class="sidebar-link">过去分词&amp;复数&amp;现在分词</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>可可晨读</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/Myblog/pages/2d20ef/" class="sidebar-link">基本语法</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>每日语句摘抄</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>雅思chatGpt</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>TED</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>2024年部分</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>2025年部分</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Myblog/pages/626510/" aria-current="page" class="active sidebar-link">20250208</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/Myblog/pages/626510/#machine-translation这是你不会喜欢的事情。但在这里每个人都是骗子。别太介意。我的意思是说谎非常常见-而且现在我们每天都在说谎-这已是众所周知的事实。-事实上-科学家估计我们每天大约会说两次谎-尽管当然-要确定这些数字并不容易。-好吧-我来介绍一下自己。-我是里卡多-一名心理学家和博士生-我的研究项目是研究人们识别谎言的能力。-看起来很酷-对吧-但我不是在开玩笑。-你也许想知道为什么一位心理学家会被邀请-来做有关人工智能的-ted-演讲。我今天来这里是-为了告诉你们如何使用人工智能来检测谎言。-你一定会对答案感到非常惊讶。-但首先-什么时候检测谎言才是重要的-我想到-第一个明显的例子-就是刑事调查领域。-想象一下你是一名警察-你想要采访一名嫌疑人。-并且犯罪嫌疑人正在向你提供一些信息。-这些信息实际上引导了调查的下一步行动。-我们当然想了解嫌疑人是否可靠-或者他们是否试图欺骗我们。然后我想到另一个例子-我认为这确实影响到我们所有人。所以-如果你想知道你的伴侣是否欺骗了你-请举手。-笑声-别害羞-我知道。-笑声-是的。-你看-这非常有意义。-然而-我不得不说-我们人类-很不擅长识别谎言。-事实上-很多研究已经证实-当人们在对对方或具体情况不太了解的情况下-判断某人是否说谎时" class="sidebar-link">Machine Translation
+这是你不会喜欢的事情。
+但在这里每个人都是骗子。
+别太介意。
+我的意思是说谎非常常见，
+&quot;而且现在
+我们每天都在说谎，这已是众所周知的事实。&quot;
+&quot;事实上，科学家估计
+我们每天大约会说两次谎，&quot;
+&quot;尽管当然，要
+确定这些数字并不容易。&quot;
+好吧，我来介绍一下自己。
+&quot;我是里卡多，一名心理学家
+和博士生，&quot;
+&quot;我的研究项目是研究
+人们识别谎言的能力。&quot;
+看起来很酷，对吧？ 但我不是在开玩笑。
+&quot;你也许想知道
+为什么一位心理学家会被邀请&quot;
+来做有关人工智能的 TED 演讲。
+我今天来这里是
+&quot;为了告诉你们
+如何使用人工智能来检测谎言。&quot;
+&quot;你一定会对答案感到非常惊讶
+。&quot;
+&quot;但首先，
+什么时候检测谎言才是重要的？ 我想到&quot;
+&quot;第一个明显的例子
+&quot;
+就是刑事调查领域。
+&quot;想象一下你是一名警察
+，你想要采访一名嫌疑人。&quot;
+&quot;并且犯罪嫌疑人正在
+向你提供一些信息。&quot;
+&quot;这些信息实际上引导了
+调查的下一步行动。&quot;
+&quot;我们当然想了解
+嫌疑人是否可靠，&quot;
+或者他们是否试图欺骗我们。
+然后我想到另一个例子，
+我认为这确实影响到我们所有人。
+所以，
+&quot;如果你想知道
+你的伴侣是否欺骗了你，请举手。&quot;
+（笑声）
+别害羞，我知道。
+（笑声）
+是的。 你看？
+这非常有意义。
+&quot;然而，我不得不说，
+我们人类&quot;
+很不擅长识别谎言。
+&quot;事实上，很多研究
+已经证实，&quot;
+当人们在对对方或具体情况不太了解的情况下，判断
+某人是否说谎时，</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/626510/#人们的准确率并不比偶然水平高-和-抛硬币差不多。您可能还想知道-警察、检察官、专家-甚至心理学家等专家是否更善于识别谎言。答案很复杂-因为单靠经验似乎-不足以准确地识别谎言。这或许有帮助-但还不够。给你一些数字。-在2006年-学者们所做的一项著名的荟萃分析中-他们发现天真的判断者的准确率平均约为54-。专家的表现仅略好一些-准确率约为-55-。-笑声-没什么特别的-对吧-而且-这些数字实际上来自对-108-项研究结果的分析-这-意味着这些发现非常可靠。-当然-争论要比这复杂得多-也更加微妙。但这里最主要的讯息-是-人类并不擅长察觉谎言。-如果我们创建一种人工智能工具-让-每个人都能检测出其他人是否在说谎-那会怎样-这目前还不可能-所以请不要惊慌。-笑声-但这正是我们在最近的研究中尝试做的-我和我的杰出的同事们一起做了这项研究-我需要向他们表示感谢。-实际上-为了让你了解我们在研究中所做的工作-我需要首先向你介绍一些技术概念-和这个故事的主角-大型语言模型。大型语言模型是-旨在以-几乎模仿人类交流的方式生成自然语言输出的人工智能系统。-如果你想知道我们如何教这些人工智能系统检测谎言-这就是所谓的微调。-但让我们打个比方。-想象一下大型语言模型就像-经过多年学校教育的学生-他们学习了各种知识-例如语言、概念、事实。但是当他们需要进入专业领域时-比如进入法学院或医学院-他们需要更有针对性的培训。微调就是额外的教育。-当然-大型语言模型的学习方式并不像人类那样。-但这只是为了告诉你主要思想。-然后-对于培训学生-你需要书籍、讲座、例子-对于训练大型语言模型-你需要数据集。-在我们的研究中-我们考虑了三个数据集-一个是关于个人观点-一个是关于过去的自传体记忆-一个是关于未来意图。-这些数据集已经从以前的研究中获得-包含真实的和欺骗性的陈述。-通常-你-通过要求参与者说实话或撒谎来收集这些类型的陈述。-例如-如果我是真实条件下的参与者-并且任务是-告诉我你过去的假期-那么我会告诉研究人员我以前在越南的假期-这里有一张幻灯片来证明这一点。为了欺骗对方-他们会随机挑选一些从未去过越南的人-要求你们编造一个故事-让别人相信你真的去过越南。-这就是它的典型工作方式。-你们可能知道-就像所有大学课程一样-上完课之后还要参加考试。同样-在训练我们的人工智能模型之后-我们也想对其进行测试。我们遵循的程序-实际上是典型的程序-如下所示。-因此-我们从每个数据集中随机挑选了一些语句-然后将它们分开。-因此模型在训练阶段从未见过这些陈述。-只有在培训完成后-我们才将它们用作测试-作为期末考试。但当时我们的学生是谁-在这种情况下-它是谷歌开发的一个大型语言模型" class="sidebar-link">&quot;人们的准确率并不
+比偶然水平高，和&quot;
+抛硬币差不多。
+您可能还想知道，
+&quot;警察、
+检察官、专家&quot;
+甚至心理学家等专家是否
+更善于识别谎言。
+答案很复杂，
+&quot;因为单靠经验
+似乎&quot;
+不足以准确地识别谎言。
+这或许有帮助，但还不够。
+给你一些数字。
+&quot;在2006年，学者们所做的一项著名的荟萃分析中
+，&quot;
+他们发现天真的判断者的准确率
+平均约为54%。
+专家的表现仅略好一些，
+准确率约为 55%。
+（笑声）
+没什么特别的，对吧？
+而且...
+&quot;这些数字实际上
+来自对&quot;
+108 项研究结果的分析，这
+&quot;意味着这些发现
+非常可靠。&quot;
+&quot;当然，争论
+要比这复杂得多，&quot;
+也更加微妙。
+但这里最主要的讯息
+&quot;是，人类并不
+擅长察觉谎言。&quot;
+如果我们创建一种人工智能工具，让
+&quot;每个人都能检测出
+其他人是否在说谎，那会怎样？&quot;
+&quot;这目前还不可能，
+所以请不要惊慌。&quot;
+（笑声）
+&quot;但这正是我们
+在最近的研究中尝试做的，&quot;
+&quot;我
+和我的杰出的同事们一起做了这项研究，&quot;
+我需要向他们表示感谢。
+&quot;实际上，为了让你了解
+我们在研究中所做的工作，&quot;
+&quot;我需要首先向你介绍
+一些技术概念&quot;
+和这个故事的主角：
+大型语言模型。
+大型语言模型是
+&quot;旨在以
+&quot;
+&quot;几乎模仿
+人类交流的方式生成自然语言输出的人工智能系统。&quot;
+&quot;如果你想知道我们如何教
+这些人工智能系统检测谎言，&quot;
+&quot;这就是所谓的
+微调。&quot;
+但让我们打个比方。
+&quot;想象一下大型语言模型
+就像&quot;
+经过多年学校教育的学生，他们
+学习了各种知识，
+例如语言、概念、事实。
+但是当他们需要进入专业领域时，
+比如进入法学院或医学院，
+他们需要更有针对性的培训。
+微调就是额外的教育。
+&quot;当然，大型语言模型的
+学习方式并不像人类那样。&quot;
+&quot;但这只是为了告诉你
+主要思想。&quot;
+&quot;然后，对于培训学生，
+你需要书籍、讲座、例子；&quot;
+&quot;对于训练大型语言模型，
+你需要数据集。&quot;
+&quot;在我们的研究中，
+我们考虑了三个数据集，&quot;
+一个是关于个人观点，
+一个是关于过去的自传体记忆
+，一个是关于未来意图。
+&quot;这些数据集已经
+从以前的研究中获得&quot;
+&quot;，包含真实的
+和欺骗性的陈述。&quot;
+&quot;通常，你
+&quot;
+&quot;通过要求参与者说实话
+或撒谎来收集这些类型的陈述。&quot;
+&quot;例如，如果我是
+真实条件下的参与者，&quot;
+并且任务是
+“告诉我你过去的假期”，
+&quot;那么我会告诉研究人员
+我以前在越南的假期，&quot;
+这里有一张幻灯片来证明这一点。
+为了欺骗对方，
+&quot;他们会随机挑选一些
+从未去过越南的人，&quot;
+要求你们编造一个故事
+&quot;，让别人相信
+你真的去过越南。&quot;
+这就是它的典型工作方式。 你们可能知道，
+&quot;就像所有大学课程一样，
+&quot;
+上完课之后还要参加考试。
+同样，在训练我们的人工智能模型之后，
+我们也想对其进行测试。
+我们遵循的程序
+&quot;实际上是典型的程序，
+如下所示。&quot;
+&quot;因此，我们从每个数据集中随机挑选了一些语句，
+&quot;
+然后将它们分开。
+&quot;因此模型在训练阶段从未见过这些陈述
+。&quot;
+只有在培训完成后，
+我们才将它们用作测试，作为期末考试。
+但当时我们的学生是谁？
+&quot;在这种情况下，它是谷歌开发的
+一个大型语言模型&quot;</a></li><li class="sidebar-sub-header level2"><a href="/Myblog/pages/626510/#称为-flan-t5。弗兰尼-送给朋友。-现在我们已经将所有流程的部分整合在一起-可以深入研究了。-我们的研究由三个主要实验组成。-对于第一个实验-我们分别在每个数据集上对我们的模型-flan-t5-进行了微调-。对于第二个实验-我们在两对数据集上对模型进行了微调-并在剩下的第三对数据集上对其进行了测试-并使用了所有三种可能的组合。-对于最后的最终实验-我们在通过将所有三个数据集组合在一起而获得的新的、更大的训练测试集上对模型进行了微调-。-结果非常有趣-因为我们发现在第一次实验中-flan-t5-的准确率达到了70-到-80-之间。-然而-在第二次实验中-flan-t5-的准确率下降到了近-50-。-然后-令人惊讶的是-在第三次实验中-flan-t5-又回升至近-80-。但这是什么意思呢-我们可以从这些结果中了解到什么-从实验一和实验三中-我们了解到语言模型-可以有效地将语句分类为欺骗性语句-其表现-优于人类基准-并与" class="sidebar-link">，称为 FLAN-T5。
+弗兰尼，送给朋友。
+&quot;现在我们已经将所有
+流程的部分整合在一起，&quot;
+可以深入研究了。
+&quot;我们的研究
+由三个主要实验组成。&quot;
+&quot;对于第一个实验，
+我们分别在每个数据集上对我们的模型 FLAN-T5 进行了微调&quot;
+。
+对于第二个实验，
+&quot;我们
+在两对数据集上对模型进行了微调，&quot;
+&quot;并
+在剩下的第三对数据集上对其进行了测试，&quot;
+&quot;并使用了所有三种
+可能的组合。&quot;
+对于最后的最终实验，
+&quot;我们在通过将所有三个数据集组合在一起而获得的
+新的、更大的训练测试集上对模型进行了微调&quot;
+&quot;
+。&quot;
+结果非常有趣，
+&quot;因为我们发现
+在第一次实验中，&quot;
+&quot;FLAN-T5 的准确率达到了
+70% 到 80% 之间。&quot;
+然而，在第二次实验中，
+&quot;FLAN-T5 的准确率下降
+到了近 50%。&quot;
+&quot;然后，令人惊讶的是，
+在第三次实验中，&quot;
+FLAN-T5 又回升至近 80%。
+但这是什么意思呢？
+我们可以从这些结果中了解到什么？
+从实验一和实验三中，
+我们了解到语言模型
+&quot;可以有效地将
+语句分类为欺骗性语句，其表现&quot;
+优于人类基准，
+&quot;并与
+&quot;</a></li></ul></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>莉雅老师教英语</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VOA</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>quora</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/Myblog/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/Myblog/categories/?category=%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0" title="分类" data-v-06225672>英语学习</a></li><li data-v-06225672><a href="/Myblog/categories/?category=TED" title="分类" data-v-06225672>TED</a></li><li data-v-06225672><a href="/Myblog/categories/?category=2025%E5%B9%B4%E9%83%A8%E5%88%86" title="分类" data-v-06225672>2025年部分</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/MaiRen1997" target="_blank" title="作者" class="beLink" data-v-06225672>Riverside Joy</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2025-02-13</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">20250208<!----></h1> <!----> <div class="theme-vdoing-content content__default"><p>This is something you won't like.
+But here everyone is a <strong>liar</strong>.
+<strong>Don't take it too personally</strong>.
+What I mean is that lying is very common and it is now well-established that we lie on a daily basis.
+Indeed, scientists have <strong>estimated</strong> that we <strong>tell around two lies per day</strong>,
+although, of course, it's not that easy to establish those numbers with certainty.
+And, well, I introduce myself.
+I'm Riccardo, I'm a <strong>psychologist</strong> and a PhD candidate,
+and for my research project I study <strong>how good are people at detecting lies</strong>.
+Seems cool, right? But I'm not joking.
+And you might wonder why a psychologist was then invited to give a TED Talk about AI.
+And well, I'm here today because I'm about to tell you how AI could be used to detect lies.
+And you will be very surprised by the answer.
+But first of all, when is it relevant to detect lies?
+A first clear example that comes to my mind
+is in the <strong>criminal</strong> <strong>investigation</strong> <strong>field</strong>.
+Imagine you are a police officer and you want to interview a suspect.
+And the suspect is <strong>providing some information to you</strong>.
+And this information is actually leading to the next steps of the <strong>investigation</strong>.
+We certainly want to understand if the suspect is reliable or if they are trying to deceive us.
+Then another example comes to my mind,
+and I think this really affects all of us.
+So please raise your hands
+if you would like to know if your partner cheated on you.
+(Laughter)
+And don't be shy because I know.
+(Laughter)
+Yeah. You see?
+It's very relevant.
+However, <strong>I have to  say that we as humans are very bad at detecting lies</strong>.
+In fact, many studies have already confirmed that when people are asked to judge
+if someone is lying or not
+without knowing much about that person or the context,
+people's accuracy is no better than the chance level,
+about the same as flipping a coin.
+You might also wonder
+if experts, such as police officers, <strong>prosecutors</strong>, experts
+and even psychologists
+are better at detecting lies.
+And the answer is complex,
+because experience alone doesn't seem to be enough
+to help detect lies accurately.
+It might help, but it's not enough.
+To give you some numbers.
+In a well-known <strong>meta-analysis</strong> that previous <strong>scholars</strong> did in 2006,
+they found that <strong>naive</strong> judges' accuracy
+was on average around 54 percent.
+Experts perform only slightly better,
+with an accuracy rate around 55 percent.
+(Laughter)
+Not that impressive, right?
+And ...
+Those numbers actually come from the analysis
+of the results of 108 studies,
+meaning that these findings are quite <strong>robust</strong>.
+And of course, the debate is also much more <strong>complicated</strong> than this
+and also more nuanced.</p> <p><strong>complicated</strong> vs <strong>complex</strong></p> <p>如果强调繁琐或难以处理，用 &quot;more complicated&quot;；</p> <p>如果强调结构或内在关系复杂，用 &quot;more complex&quot;</p> <p>But here the main <strong>take-home</strong> message
+is that humans are not good at detecting lies.</p> <p>take-home message&quot; 强调这是听众或读者应该“带回家”（即记住并理解）的核心观点。</p> <p><strong>What if we are creating an AI tool</strong> <strong>where everyone can detect if someone else is lying?</strong>
+This is not possible yet, so please don't <strong>panic</strong>.
+(Laughter)
+But this is what we tried to do in a recent study
+that I did together with my <strong>brilliant</strong> colleagues
+whom I need to thank.
+And actually, to let you understand what we did in our study,
+I need to first introduce you to some technical concepts
+and to the main <strong>characters</strong> of this story:
+Large language models.
+Large language models are AI systems
+designed to generate outputs in natural language
+<strong>in a way</strong> that almost <strong>mimics</strong> human communication.
+If you are wondering how we teach these AI systems to detect lies,
+here is where something called <strong>fine-tuning</strong> <strong>comes in</strong>.
+But let's use a <strong>metaphor</strong>.
+Imagine large language models being as students
+who have <strong>gone through</strong> years of school,
+learning a little bit about everything,
+such as language, concepts, facts.
+But when it's time for them to specialize,
+like in law school or in medical school,
+they need more focused training.
+Fine-tuning is that extra education.
+And of course, large language models don't learn as humans do.
+But this is just to give you the main idea.
+Then, as for training students, you need books, <strong>lectures</strong>, examples,
+for training large language models you need <strong>datasets</strong>.
+And for our study we considered three datasets,
+one about personal opinions,
+one about past <strong>autobiographical</strong> memories
+and one about future <strong>intentions</strong>.
+These datasets were already available from previous studies
+and contained both <strong>truthful</strong> and <strong>deceptive</strong> statements.
+Typically, you collect these types of statements
+by asking <strong>participants</strong> to tell the truth or to lie about something.
+For example, if I was a participant in the truthful condition,
+and the task was
+&quot;tell me about your past holidays,&quot;
+then I will tell the researcher about my previous holidays in Vietnam,
+and here we have a <strong>slide</strong> to <strong>prove</strong> it.
+For the deceptive condition
+they will randomly pick some of you who have never been to Vietnam,
+and they will ask you to make up a story
+and <strong>convince</strong> someone else that you've really been to Vietnam.
+And this is how it typically works.
+And as in all university courses, you might know this,
+after <strong>lectures</strong> you have exams.
+And <strong>likewise</strong> after training our AI models,
+we would like to test them.
+And the procedure that we followed,
+that is actually the typical one, is the following.
+So we picked some statements randomly from each dataset
+and we <strong>took them apart</strong>.
+So the model never saw these statements during the training phase.
+And only after the training was completed,
+we used them as a test, as the final exam.
+But who was our student then?
+In this case, it was a large language model
+developed by Google
+and called FLAN-T5.
+Flanny, for friends.
+And now that we have all the pieces of the process together,
+we can actually <strong>dig deep into</strong> our study.
+Our study was <strong>composed</strong> by three main <strong>experiments</strong>.
+For the first <strong>experiment</strong>, we <strong>fine-tuned</strong> our model, our FLAN-T5,
+on each single dataset <strong>separately</strong>.
+For the second experiment,
+we fine-tuned our model on two pairs of datasets together,
+and we tested it on the third <strong>remaining</strong> one,
+and we used all three possible combinations.
+For the last final experiment,
+we fine-tuned the model on a new, larger training test set
+that we <strong>obtained</strong> by combining all the three datasets together.
+The results were quite interesting
+because what we found was that in the first experiment,
+FLAN-T5 achieved an accuracy range between 70 percent and 80 percent.
+However, in the second experiment,
+FLAN-T5 dropped its accuracy to almost 50 percent.
+And then, surprisingly, in the third experiment,
+FLAN-T5 rose back to almost 80 percent.
+But what does this mean?
+What can we learn from these results?
+From experiment one and three
+we learn that language models
+can effectively classify statements as deceptive,
+<strong>outperforming</strong> human <strong>benchmarks</strong>
+and <strong>aligning with</strong> previous machine learning
+and deep learning models
+that previous studies trained on the same datasets.
+However, from the second experiment,
+we see that language models <strong>struggle</strong>
+in <strong>generalizing</strong> this knowledge, this learning across different contexts.
+And this is <strong>apparently</strong> because
+there is no one single <strong>universal</strong> rule of <strong>deception</strong>
+that we can easily apply in every context,
+but <strong>linguistic</strong> <strong>cues</strong> of deception are context-dependent.
+And from the third experiment,
+we learned that actually language models
+can <strong>generalize</strong> well <strong>across</strong> different contexts,
+if only they have <u>been <strong>previously</strong> exposed to examples</u>
+during the training <strong>phase</strong>.
+And I think this sounds as good news.
+But while this means that language models can be effectively applied
+for real-life applications in lie detection,
+more <strong>replication</strong> is needed because a single study is never enough
+so that from tomorrow we can all have these AI systems on our smartphones,
+and start detecting other people's lies.
+But as a scientist, I have a vivid imagination
+and I would like to dream big.
+And also I would like to <strong>bring you with me</strong> in this <strong>futuristic</strong> journey <strong>for a while</strong>.
+So please imagine with me living in a world
+where this lie detection technology is <strong>well-integrated</strong> in our life,
+making everything from <strong>national security</strong> to social media a little bit safer.
+And imagine having this AI system that could actually <strong>spot</strong> <strong>fake</strong> opinions.
+From tomorrow, we could say
+when a politician is actually saying one thing
+and truly believes something else.
+(Laughter)
+And what about the security board context
+where people are asked about their <strong>intentions</strong> and reasons
+for why they are crossing borders or boarding planes.
+Well, with these systems,
+we could actually spot malicious intentions
+before they even happen.
+And what about the <strong>recruiting</strong> process?
+(Laughter)
+We heard about this already.
+But actually, companies could <strong>employ</strong> this AI
+to distinguish those who are really <strong>passionate</strong> about the role
+from those who are just trying to say the right things to get the job.
+And finally, we have social media.
+Scammers trying to deceive you or to <strong>steal</strong> your <strong>identity</strong>.
+<strong>All gone</strong>.
+And someone else may claim something about <strong>fake</strong> news,
+and well, perfectly, language model could automatically read the news,
+flag them as <strong>deceptive</strong> or <strong>fake</strong>,
+and we could even provide users with a <strong>credibility</strong> score
+for the information they read.
+It sounds like a <strong>brilliant</strong> future, right?
+(Laughter)
+Yes, but ...
+<strong>all great progress comes with risks</strong>.
+As much as I'm excited about this future,
+I think we need to be careful.
+If we are not cautious, in my view,
+we could end up in a world
+where people might just <strong>blindly</strong> believe AI outputs.
+And I'm afraid this means that people will just be more likely
+to <strong>accuse</strong> others of lying just because an AI says so.
+And I'm not the only one with this view
+because another study already <strong>proved</strong> it.
+In addition, if we totally <strong>rely on</strong> this lie detection technology
+to say someone else is lying or not,
+<strong>we risk losing</strong> another important key value in society.
+We lose trust.
+We won't need to trust -people anymore,
+because what we will do is just ask an AI to double check for us.
+But are we really willing to blindly believe AI
+and give up our <strong>critical</strong> thinking?
+I think that's the future we need to avoid.
+With hope for the future is more <strong>interpretability</strong>.
+And I'm about to tell you what I mean.
+Similar to when we look at <strong>reviews</strong> online,
+and we can both look at the total number of stars at places,
+but also we can look more in detail at the <strong>positive and negative reviews</strong>,
+and try to understand what are the positive sides,
+but also what might have gone wrong,
+to eventually create our own and personal idea
+if that is the place where we want to go,
+where we want to be.
+<strong>Likewise</strong>, imagine a world where AI doesn't just offer conclusions,
+but also provides clear and understandable explanations
+behind its decisions.
+And I <strong>envision</strong> a future
+where this lie detection technology
+wouldn't just provide us with a simple <strong>judgment</strong>,
+but also with clear explanations for why it thinks someone else is lying.
+<strong>And I would like a future where</strong>, yes,
+this lie detection technology is <strong>integrated</strong> in our life,
+or also AI technology in <strong>general</strong>,
+but still, at the same time,
+we are able to think critically
+and decide when we want to trust in AI judgment
+or when we want to question it.
+To conclude,
+I think the future of using AI for lie detection
+is not just about technological advancement,
+but about enhancing our understanding and <strong>fostering</strong> trust.
+It's about developing tools that don't replace human judgment
+but <strong>empower</strong> it,
+ensuring that we remain at the <strong>helm</strong>.
+Don't step into a future with blind reliance on technology.
+Let's commit to deep understanding and <strong>ethical</strong> use,
+and we'll <strong>pursue</strong> the truth.
+(Applause)
+Thank you.</p> <h2 id="machine-translation这是你不会喜欢的事情。但在这里每个人都是骗子。别太介意。我的意思是说谎非常常见-而且现在我们每天都在说谎-这已是众所周知的事实。-事实上-科学家估计我们每天大约会说两次谎-尽管当然-要确定这些数字并不容易。-好吧-我来介绍一下自己。-我是里卡多-一名心理学家和博士生-我的研究项目是研究人们识别谎言的能力。-看起来很酷-对吧-但我不是在开玩笑。-你也许想知道为什么一位心理学家会被邀请-来做有关人工智能的-ted-演讲。我今天来这里是-为了告诉你们如何使用人工智能来检测谎言。-你一定会对答案感到非常惊讶。-但首先-什么时候检测谎言才是重要的-我想到-第一个明显的例子-就是刑事调查领域。-想象一下你是一名警察-你想要采访一名嫌疑人。-并且犯罪嫌疑人正在向你提供一些信息。-这些信息实际上引导了调查的下一步行动。-我们当然想了解嫌疑人是否可靠-或者他们是否试图欺骗我们。然后我想到另一个例子-我认为这确实影响到我们所有人。所以-如果你想知道你的伴侣是否欺骗了你-请举手。-笑声-别害羞-我知道。-笑声-是的。-你看-这非常有意义。-然而-我不得不说-我们人类-很不擅长识别谎言。-事实上-很多研究已经证实-当人们在对对方或具体情况不太了解的情况下-判断某人是否说谎时"><a href="#machine-translation这是你不会喜欢的事情。但在这里每个人都是骗子。别太介意。我的意思是说谎非常常见-而且现在我们每天都在说谎-这已是众所周知的事实。-事实上-科学家估计我们每天大约会说两次谎-尽管当然-要确定这些数字并不容易。-好吧-我来介绍一下自己。-我是里卡多-一名心理学家和博士生-我的研究项目是研究人们识别谎言的能力。-看起来很酷-对吧-但我不是在开玩笑。-你也许想知道为什么一位心理学家会被邀请-来做有关人工智能的-ted-演讲。我今天来这里是-为了告诉你们如何使用人工智能来检测谎言。-你一定会对答案感到非常惊讶。-但首先-什么时候检测谎言才是重要的-我想到-第一个明显的例子-就是刑事调查领域。-想象一下你是一名警察-你想要采访一名嫌疑人。-并且犯罪嫌疑人正在向你提供一些信息。-这些信息实际上引导了调查的下一步行动。-我们当然想了解嫌疑人是否可靠-或者他们是否试图欺骗我们。然后我想到另一个例子-我认为这确实影响到我们所有人。所以-如果你想知道你的伴侣是否欺骗了你-请举手。-笑声-别害羞-我知道。-笑声-是的。-你看-这非常有意义。-然而-我不得不说-我们人类-很不擅长识别谎言。-事实上-很多研究已经证实-当人们在对对方或具体情况不太了解的情况下-判断某人是否说谎时" class="header-anchor">#</a> Machine Translation
+这是你不会喜欢的事情。
+但在这里每个人都是骗子。
+别太介意。
+我的意思是说谎非常常见，
+&quot;而且现在
+我们每天都在说谎，这已是众所周知的事实。&quot;
+&quot;事实上，科学家估计
+我们每天大约会说两次谎，&quot;
+&quot;尽管当然，要
+确定这些数字并不容易。&quot;
+好吧，我来介绍一下自己。
+&quot;我是里卡多，一名心理学家
+和博士生，&quot;
+&quot;我的研究项目是研究
+人们识别谎言的能力。&quot;
+看起来很酷，对吧？ 但我不是在开玩笑。
+&quot;你也许想知道
+为什么一位心理学家会被邀请&quot;
+来做有关人工智能的 TED 演讲。
+我今天来这里是
+&quot;为了告诉你们
+如何使用人工智能来检测谎言。&quot;
+&quot;你一定会对答案感到非常惊讶
+。&quot;
+&quot;但首先，
+什么时候检测谎言才是重要的？ 我想到&quot;
+&quot;第一个明显的例子
+&quot;
+就是刑事调查领域。
+&quot;想象一下你是一名警察
+，你想要采访一名嫌疑人。&quot;
+&quot;并且犯罪嫌疑人正在
+向你提供一些信息。&quot;
+&quot;这些信息实际上引导了
+调查的下一步行动。&quot;
+&quot;我们当然想了解
+嫌疑人是否可靠，&quot;
+或者他们是否试图欺骗我们。
+然后我想到另一个例子，
+我认为这确实影响到我们所有人。
+所以，
+&quot;如果你想知道
+你的伴侣是否欺骗了你，请举手。&quot;
+（笑声）
+别害羞，我知道。
+（笑声）
+是的。 你看？
+这非常有意义。
+&quot;然而，我不得不说，
+我们人类&quot;
+很不擅长识别谎言。
+&quot;事实上，很多研究
+已经证实，&quot;
+当人们在对对方或具体情况不太了解的情况下，判断
+某人是否说谎时，</h2> <h2 id="人们的准确率并不比偶然水平高-和-抛硬币差不多。您可能还想知道-警察、检察官、专家-甚至心理学家等专家是否更善于识别谎言。答案很复杂-因为单靠经验似乎-不足以准确地识别谎言。这或许有帮助-但还不够。给你一些数字。-在2006年-学者们所做的一项著名的荟萃分析中-他们发现天真的判断者的准确率平均约为54-。专家的表现仅略好一些-准确率约为-55-。-笑声-没什么特别的-对吧-而且-这些数字实际上来自对-108-项研究结果的分析-这-意味着这些发现非常可靠。-当然-争论要比这复杂得多-也更加微妙。但这里最主要的讯息-是-人类并不擅长察觉谎言。-如果我们创建一种人工智能工具-让-每个人都能检测出其他人是否在说谎-那会怎样-这目前还不可能-所以请不要惊慌。-笑声-但这正是我们在最近的研究中尝试做的-我和我的杰出的同事们一起做了这项研究-我需要向他们表示感谢。-实际上-为了让你了解我们在研究中所做的工作-我需要首先向你介绍一些技术概念-和这个故事的主角-大型语言模型。大型语言模型是-旨在以-几乎模仿人类交流的方式生成自然语言输出的人工智能系统。-如果你想知道我们如何教这些人工智能系统检测谎言-这就是所谓的微调。-但让我们打个比方。-想象一下大型语言模型就像-经过多年学校教育的学生-他们学习了各种知识-例如语言、概念、事实。但是当他们需要进入专业领域时-比如进入法学院或医学院-他们需要更有针对性的培训。微调就是额外的教育。-当然-大型语言模型的学习方式并不像人类那样。-但这只是为了告诉你主要思想。-然后-对于培训学生-你需要书籍、讲座、例子-对于训练大型语言模型-你需要数据集。-在我们的研究中-我们考虑了三个数据集-一个是关于个人观点-一个是关于过去的自传体记忆-一个是关于未来意图。-这些数据集已经从以前的研究中获得-包含真实的和欺骗性的陈述。-通常-你-通过要求参与者说实话或撒谎来收集这些类型的陈述。-例如-如果我是真实条件下的参与者-并且任务是-告诉我你过去的假期-那么我会告诉研究人员我以前在越南的假期-这里有一张幻灯片来证明这一点。为了欺骗对方-他们会随机挑选一些从未去过越南的人-要求你们编造一个故事-让别人相信你真的去过越南。-这就是它的典型工作方式。-你们可能知道-就像所有大学课程一样-上完课之后还要参加考试。同样-在训练我们的人工智能模型之后-我们也想对其进行测试。我们遵循的程序-实际上是典型的程序-如下所示。-因此-我们从每个数据集中随机挑选了一些语句-然后将它们分开。-因此模型在训练阶段从未见过这些陈述。-只有在培训完成后-我们才将它们用作测试-作为期末考试。但当时我们的学生是谁-在这种情况下-它是谷歌开发的一个大型语言模型"><a href="#人们的准确率并不比偶然水平高-和-抛硬币差不多。您可能还想知道-警察、检察官、专家-甚至心理学家等专家是否更善于识别谎言。答案很复杂-因为单靠经验似乎-不足以准确地识别谎言。这或许有帮助-但还不够。给你一些数字。-在2006年-学者们所做的一项著名的荟萃分析中-他们发现天真的判断者的准确率平均约为54-。专家的表现仅略好一些-准确率约为-55-。-笑声-没什么特别的-对吧-而且-这些数字实际上来自对-108-项研究结果的分析-这-意味着这些发现非常可靠。-当然-争论要比这复杂得多-也更加微妙。但这里最主要的讯息-是-人类并不擅长察觉谎言。-如果我们创建一种人工智能工具-让-每个人都能检测出其他人是否在说谎-那会怎样-这目前还不可能-所以请不要惊慌。-笑声-但这正是我们在最近的研究中尝试做的-我和我的杰出的同事们一起做了这项研究-我需要向他们表示感谢。-实际上-为了让你了解我们在研究中所做的工作-我需要首先向你介绍一些技术概念-和这个故事的主角-大型语言模型。大型语言模型是-旨在以-几乎模仿人类交流的方式生成自然语言输出的人工智能系统。-如果你想知道我们如何教这些人工智能系统检测谎言-这就是所谓的微调。-但让我们打个比方。-想象一下大型语言模型就像-经过多年学校教育的学生-他们学习了各种知识-例如语言、概念、事实。但是当他们需要进入专业领域时-比如进入法学院或医学院-他们需要更有针对性的培训。微调就是额外的教育。-当然-大型语言模型的学习方式并不像人类那样。-但这只是为了告诉你主要思想。-然后-对于培训学生-你需要书籍、讲座、例子-对于训练大型语言模型-你需要数据集。-在我们的研究中-我们考虑了三个数据集-一个是关于个人观点-一个是关于过去的自传体记忆-一个是关于未来意图。-这些数据集已经从以前的研究中获得-包含真实的和欺骗性的陈述。-通常-你-通过要求参与者说实话或撒谎来收集这些类型的陈述。-例如-如果我是真实条件下的参与者-并且任务是-告诉我你过去的假期-那么我会告诉研究人员我以前在越南的假期-这里有一张幻灯片来证明这一点。为了欺骗对方-他们会随机挑选一些从未去过越南的人-要求你们编造一个故事-让别人相信你真的去过越南。-这就是它的典型工作方式。-你们可能知道-就像所有大学课程一样-上完课之后还要参加考试。同样-在训练我们的人工智能模型之后-我们也想对其进行测试。我们遵循的程序-实际上是典型的程序-如下所示。-因此-我们从每个数据集中随机挑选了一些语句-然后将它们分开。-因此模型在训练阶段从未见过这些陈述。-只有在培训完成后-我们才将它们用作测试-作为期末考试。但当时我们的学生是谁-在这种情况下-它是谷歌开发的一个大型语言模型" class="header-anchor">#</a> &quot;人们的准确率并不
+比偶然水平高，和&quot;
+抛硬币差不多。
+您可能还想知道，
+&quot;警察、
+检察官、专家&quot;
+甚至心理学家等专家是否
+更善于识别谎言。
+答案很复杂，
+&quot;因为单靠经验
+似乎&quot;
+不足以准确地识别谎言。
+这或许有帮助，但还不够。
+给你一些数字。
+&quot;在2006年，学者们所做的一项著名的荟萃分析中
+，&quot;
+他们发现天真的判断者的准确率
+平均约为54%。
+专家的表现仅略好一些，
+准确率约为 55%。
+（笑声）
+没什么特别的，对吧？
+而且...
+&quot;这些数字实际上
+来自对&quot;
+108 项研究结果的分析，这
+&quot;意味着这些发现
+非常可靠。&quot;
+&quot;当然，争论
+要比这复杂得多，&quot;
+也更加微妙。
+但这里最主要的讯息
+&quot;是，人类并不
+擅长察觉谎言。&quot;
+如果我们创建一种人工智能工具，让
+&quot;每个人都能检测出
+其他人是否在说谎，那会怎样？&quot;
+&quot;这目前还不可能，
+所以请不要惊慌。&quot;
+（笑声）
+&quot;但这正是我们
+在最近的研究中尝试做的，&quot;
+&quot;我
+和我的杰出的同事们一起做了这项研究，&quot;
+我需要向他们表示感谢。
+&quot;实际上，为了让你了解
+我们在研究中所做的工作，&quot;
+&quot;我需要首先向你介绍
+一些技术概念&quot;
+和这个故事的主角：
+大型语言模型。
+大型语言模型是
+&quot;旨在以
+&quot;
+&quot;几乎模仿
+人类交流的方式生成自然语言输出的人工智能系统。&quot;
+&quot;如果你想知道我们如何教
+这些人工智能系统检测谎言，&quot;
+&quot;这就是所谓的
+微调。&quot;
+但让我们打个比方。
+&quot;想象一下大型语言模型
+就像&quot;
+经过多年学校教育的学生，他们
+学习了各种知识，
+例如语言、概念、事实。
+但是当他们需要进入专业领域时，
+比如进入法学院或医学院，
+他们需要更有针对性的培训。
+微调就是额外的教育。
+&quot;当然，大型语言模型的
+学习方式并不像人类那样。&quot;
+&quot;但这只是为了告诉你
+主要思想。&quot;
+&quot;然后，对于培训学生，
+你需要书籍、讲座、例子；&quot;
+&quot;对于训练大型语言模型，
+你需要数据集。&quot;
+&quot;在我们的研究中，
+我们考虑了三个数据集，&quot;
+一个是关于个人观点，
+一个是关于过去的自传体记忆
+，一个是关于未来意图。
+&quot;这些数据集已经
+从以前的研究中获得&quot;
+&quot;，包含真实的
+和欺骗性的陈述。&quot;
+&quot;通常，你
+&quot;
+&quot;通过要求参与者说实话
+或撒谎来收集这些类型的陈述。&quot;
+&quot;例如，如果我是
+真实条件下的参与者，&quot;
+并且任务是
+“告诉我你过去的假期”，
+&quot;那么我会告诉研究人员
+我以前在越南的假期，&quot;
+这里有一张幻灯片来证明这一点。
+为了欺骗对方，
+&quot;他们会随机挑选一些
+从未去过越南的人，&quot;
+要求你们编造一个故事
+&quot;，让别人相信
+你真的去过越南。&quot;
+这就是它的典型工作方式。 你们可能知道，
+&quot;就像所有大学课程一样，
+&quot;
+上完课之后还要参加考试。
+同样，在训练我们的人工智能模型之后，
+我们也想对其进行测试。
+我们遵循的程序
+&quot;实际上是典型的程序，
+如下所示。&quot;
+&quot;因此，我们从每个数据集中随机挑选了一些语句，
+&quot;
+然后将它们分开。
+&quot;因此模型在训练阶段从未见过这些陈述
+。&quot;
+只有在培训完成后，
+我们才将它们用作测试，作为期末考试。
+但当时我们的学生是谁？
+&quot;在这种情况下，它是谷歌开发的
+一个大型语言模型&quot;</h2> <h2 id="称为-flan-t5。弗兰尼-送给朋友。-现在我们已经将所有流程的部分整合在一起-可以深入研究了。-我们的研究由三个主要实验组成。-对于第一个实验-我们分别在每个数据集上对我们的模型-flan-t5-进行了微调-。对于第二个实验-我们在两对数据集上对模型进行了微调-并在剩下的第三对数据集上对其进行了测试-并使用了所有三种可能的组合。-对于最后的最终实验-我们在通过将所有三个数据集组合在一起而获得的新的、更大的训练测试集上对模型进行了微调-。-结果非常有趣-因为我们发现在第一次实验中-flan-t5-的准确率达到了70-到-80-之间。-然而-在第二次实验中-flan-t5-的准确率下降到了近-50-。-然后-令人惊讶的是-在第三次实验中-flan-t5-又回升至近-80-。但这是什么意思呢-我们可以从这些结果中了解到什么-从实验一和实验三中-我们了解到语言模型-可以有效地将语句分类为欺骗性语句-其表现-优于人类基准-并与"><a href="#称为-flan-t5。弗兰尼-送给朋友。-现在我们已经将所有流程的部分整合在一起-可以深入研究了。-我们的研究由三个主要实验组成。-对于第一个实验-我们分别在每个数据集上对我们的模型-flan-t5-进行了微调-。对于第二个实验-我们在两对数据集上对模型进行了微调-并在剩下的第三对数据集上对其进行了测试-并使用了所有三种可能的组合。-对于最后的最终实验-我们在通过将所有三个数据集组合在一起而获得的新的、更大的训练测试集上对模型进行了微调-。-结果非常有趣-因为我们发现在第一次实验中-flan-t5-的准确率达到了70-到-80-之间。-然而-在第二次实验中-flan-t5-的准确率下降到了近-50-。-然后-令人惊讶的是-在第三次实验中-flan-t5-又回升至近-80-。但这是什么意思呢-我们可以从这些结果中了解到什么-从实验一和实验三中-我们了解到语言模型-可以有效地将语句分类为欺骗性语句-其表现-优于人类基准-并与" class="header-anchor">#</a> ，称为 FLAN-T5。
+弗兰尼，送给朋友。
+&quot;现在我们已经将所有
+流程的部分整合在一起，&quot;
+可以深入研究了。
+&quot;我们的研究
+由三个主要实验组成。&quot;
+&quot;对于第一个实验，
+我们分别在每个数据集上对我们的模型 FLAN-T5 进行了微调&quot;
+。
+对于第二个实验，
+&quot;我们
+在两对数据集上对模型进行了微调，&quot;
+&quot;并
+在剩下的第三对数据集上对其进行了测试，&quot;
+&quot;并使用了所有三种
+可能的组合。&quot;
+对于最后的最终实验，
+&quot;我们在通过将所有三个数据集组合在一起而获得的
+新的、更大的训练测试集上对模型进行了微调&quot;
+&quot;
+。&quot;
+结果非常有趣，
+&quot;因为我们发现
+在第一次实验中，&quot;
+&quot;FLAN-T5 的准确率达到了
+70% 到 80% 之间。&quot;
+然而，在第二次实验中，
+&quot;FLAN-T5 的准确率下降
+到了近 50%。&quot;
+&quot;然后，令人惊讶的是，
+在第三次实验中，&quot;
+FLAN-T5 又回升至近 80%。
+但这是什么意思呢？
+我们可以从这些结果中了解到什么？
+从实验一和实验三中，
+我们了解到语言模型
+&quot;可以有效地将
+语句分类为欺骗性语句，其表现&quot;
+优于人类基准，
+&quot;并与
+&quot;</h2> <p>&quot;先前研究
+在相同数据集上训练的机器学习和深度学习模型保持一致。&quot;
+然而，从第二个实验中，
+我们看到语言模型很难
+&quot;将这些知识、
+这种跨不同情境的学习概括化。&quot;
+这显然是因为
+&quot;不存在一条
+&quot;
+可以轻易应用于所有情况的普遍欺骗规则，
+&quot;但欺骗的语言线索
+却与具体情况有关。&quot;
+从第三个实验中，
+我们了解到，实际上语言模型
+&quot;可以很好地推广
+到不同的语境中，&quot;
+&quot;只要它们
+&quot;
+在训练阶段曾接触过示例。
+我认为这听起来是个好消息。
+&quot;但虽然这意味着语言模型
+可以有效地应用于&quot;
+&quot;
+谎言检测的实际应用，但&quot;
+&quot;需要更多的复制，
+因为单一的研究是远远不够的，&quot;
+&quot;以便从明天开始我们都可以
+在智能手机上拥有这些人工智能系统，&quot;
+并开始检测其他人的谎言。
+&quot;但作为一名科学家，
+我拥有丰富的想象力，&quot;
+并且愿意去实现远大的梦想。
+&quot;我也想带你一起
+踏上这段未来之旅。&quot;
+&quot;所以请和我一起想象一下
+生活在这样一个世界里，&quot;
+&quot;谎言检测技术
+已经很好地融入到我们的生活，&quot;
+&quot;从国家安全
+到社交媒体，一切都将变得更加安全。&quot;
+&quot;想象一下，如果有一个人工智能系统
+能够真正识别虚假观点。&quot;
+从明天起，我们就能知道
+&quot;什么时候政客
+实际上是在说一套话，&quot;
+而什么时候他真正相信另一套话。
+（笑声）
+那么在安全公告板上，
+&quot;当人们被问及
+&quot;
+&quot;他们跨越边境
+或登机的意图和原因时，情况又如何呢？&quot;
+有了这些系统，
+&quot;我们实际上可以在
+恶意行为&quot;
+发生之前就发现它们。
+那么招聘流程是怎样的呢？
+（笑声）
+我们已经听说过这件事了。
+&quot;但实际上，公司
+可以使用这种人工智能&quot;
+&quot;来区分那些
+真正对职位充满热情的人和&quot;
+&quot;那些只是为了
+获得工作而说些正确的话的人。&quot;
+最后，我们有社交媒体。
+&quot;诈骗者试图欺骗您
+或窃取您的身份。&quot;
+一切都消失了。
+&quot;而其他人可能会对
+虚假新闻发表一些看法，&quot;
+&quot;那么语言模型
+就可以完美地自动阅读新闻，&quot;
+将其标记为欺骗性或虚假的，
+&quot;我们甚至可以为用户提供他们
+&quot;
+所读信息的可信度分数。
+这听起来像是一个美好的未来，对吧？
+（笑声）
+是的，但是……
+所有伟大的进步都伴随着风险。
+尽管我对这个未来感到兴奋，但
+我认为我们需要小心。
+在我看来，如果我们不谨慎的话，
+我们最终可能会陷入一个
+&quot;人们
+盲目相信人工智能输出的世界。&quot;
+&quot;我担心这意味着
+人们会更有可能&quot;
+&quot;指责别人撒谎，
+仅仅因为人工智能这么说。&quot;
+而且我不是唯一持有这种观点的人，
+因为另一项研究已经证明了这一点。
+&quot;此外，如果我们完全
+依赖这种测谎技术&quot;
+来判断别人是否撒谎，
+&quot;我们就有可能失去
+社会中另一个重要的核心价值。&quot;
+我们失去了信任。
+我们将不再需要信任人类，
+&quot;因为我们
+只需让人工智能为我们再检查一遍。&quot;
+&quot;但我们真的愿意
+盲目相信人工智能&quot;
+并放弃批判性思维吗？
+&quot;我认为这就是
+我们需要避免的未来。&quot;
+&quot;希望未来
+会有更多的可解释性。&quot;
+我接下来就要告诉你我的意思。 与
+我们在网上查看评论时类似，
+&quot;我们既可以
+查看各个地方的星级总数，&quot;
+&quot;也可以更详细地查看
+正面和负面的评论，&quot;
+&quot;并尝试了解
+哪些是积极的一面，&quot;
+哪些可能出了问题，
+&quot;最终形成
+我们自己的想法，&quot;
+确定那是我们想去的地方、
+我们想去的地方。
+&quot;同样，想象一下这样一个世界，
+人工智能不仅能得出结论，&quot;
+&quot;还能为其决策提供清晰
+易懂的解释&quot;
+。
+我设想的未来是，
+这种测谎技术
+&quot;不仅能为我们提供
+简单的判断，&quot;
+&quot;还能清楚地解释
+为什么它认为别人在说谎。&quot;
+我希望在未来，
+&quot;测谎技术或者人工智能技术
+能够融入我们的生活&quot;
+，
+但与此同时，
+我们仍然能够批判性地思考
+&quot;，决定何时应该
+相信人工智能的判断&quot;
+，何时应该质疑它。
+总而言之，
+&quot;我认为未来使用人工智能
+进行测谎&quot;
+&quot;不仅关乎
+技术进步，&quot;
+&quot;还关乎增进我们的理解
+和培养信任。&quot;
+&quot;这是为了开发一些工具，
+它们不会取代人类的判断力，&quot;
+而是会增强人类的判断力，
+确保我们能够掌控局势。
+&quot;不要
+盲目依赖科技走进未来。&quot;
+&quot;让我们致力于深刻理解
+和道德使用，&quot;
+追求真理。
+（掌声）
+谢谢。</p></div></div> <!----> <div class="page-edit"><div class="edit-link"><a href="https://github.com/MaiRen1997/Myblog/edit/master/docs/03.英语学习/70.TED/02.2025年部分/10.20250208.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">2/13/2025, 2:54:23 PM</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/Myblog/pages/c329cd/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">20241113</div></a> <a href="/Myblog/pages/85a025/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">20241010</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Myblog/pages/c329cd/" class="prev">20241113</a></span> <span class="next"><a href="/Myblog/pages/85a025/">20241010</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/Myblog/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/Myblog/pages/918e62/"><div>
+            不同表达
+            <!----></div></a> <span class="date">02-13</span></dt></dl><dl><dd>02</dd> <dt><a href="/Myblog/pages/2745a8/"><div>
+            词义辨析
+            <!----></div></a> <span class="date">02-13</span></dt></dl><dl><dd>03</dd> <dt><a href="/Myblog/pages/e61b81/"><div>
+            读音与音标
+            <!----></div></a> <span class="date">02-13</span></dt></dl> <dl><dd></dd> <dt><a href="/Myblog/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/Myblog/assets/js/app.9c4582c6.js" defer></script><script src="/Myblog/assets/js/2.3c9f4522.js" defer></script><script src="/Myblog/assets/js/379.0bff61eb.js" defer></script>
+  </body>
+</html>
