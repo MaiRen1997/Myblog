@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[71],{517:function(n,t,s){"use strict";s.r(t);var e=s(7),o=Object(e.a)({},(function(){var n=this._self._c;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("Markmap",{attrs:{content:"\n# 思维导图\n## 分支 1\n- 子项目 1\n- 子项目 2\n## 分支 2\n- 子项目 3\n"}})],1)}),[],!1,null,null,null);t.default=o.exports}}]);
