@@ -12,10 +12,10 @@ features: # 可选的
     details: python、数据库
     imgUrl: /img/python.png # 可选
     link: /backEnd/
-  - title: 英语
-    details: 英语语法、听力、作文
-    imgUrl: /img/english.png # 可选
-    link: /englishLife/
+  - title: goLang
+    details: golang语法
+    imgUrl: /img/golang.png # 可选
+    link: /golang/
     # imgUrl: /img/other.png
 footer: 麦仁 | 前端开发
 ---
