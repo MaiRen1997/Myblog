@@ -29,10 +29,6 @@ module.exports = [
     link: '/englishLife/',
   },
   {
-    text: '读书',
-    link: '/bookLife/',
-  },
-  {
     text: 'golang',
     link: '/golang/',
   },
